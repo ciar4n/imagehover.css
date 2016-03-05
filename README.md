@@ -16,12 +16,12 @@ Imagehover.css is a lovingly crafted CSS library allowing you to easily implemen
 2. Place the following markup in to your HTML doucment
 
   ```html
-	<figure class="imghvr-fade">
-		<img src="#">
-		  <figcaption>
-		    // Hover Content
-		  </figcaption>
-	</figure>
+  <figure class="imghvr-fade">
+    <img src="#">
+    <figcaption>
+      // Hover Content
+    </figcaption>
+  </figure>
   ```
 
 3. Edit the URL to your image and add your hover content. Them simply set your selected effect class to the containing figure element. In the example above this has been set to 'imghvr'. A full list of hover demonstations and their classes can be found [here!](http://www.imagehover.io/).
@@ -30,34 +30,34 @@ Imagehover.css is a lovingly crafted CSS library allowing you to easily implemen
 To link your image, add an empty &lt;a&gt; tag just after the figcaption element.
 
   ```html
-	<figure class="imghvr-fade">
-		<img src="#">
-		  <figcaption>
-		    // Hover Content
-		  </figcaption>
-		  <a href="http://www.imagehover.io"></a>
-	</figure>
+  <figure class="imghvr-fade">
+    <img src="#">
+    <figcaption>
+      // Hover Content
+    </figcaption>
+    <a href="http://www.imagehover.io"></a>
+  </figure>
   ```
 
 ##Background Color
 You can change the background color via some inline CSS added to the figure element like so...
 
   ```html
-	<figure class="imghvr-fade" style="background-color:#D14233;"">
-		<img src="#">
-		  <figcaption>
-		    // Hover Content
-		  </figcaption>
-	</figure>
+  <figure class="imghvr-fade" style="background-color:#D14233;"">
+    <img src="#">
+    <figcaption>
+      // Hover Content
+    </figcaption>
+  </figure>
   ```
 
 Alternatively this can be applied via your CSS files. The following example will effect all elements with a imagehover.css class applied.
 
   ```css
-	*[class^='imghvr-'],
-	*[class*=' imghvr-'] {
-	  background-color: #D14233;
-	}
+*[class^='imghvr-'],
+*[class*=' imghvr-'] {
+  background-color: #D14233;
+}
   ```
   
 ##Browser Support
