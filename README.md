@@ -1,9 +1,9 @@
 #imagehover.css
-*A Scaleable & Light Image Hover CSS Library
+*A Scaleable & Light Image Hover CSS Library*
 
 Imagehover.css is a lovingly crafted CSS library allowing you to easily implement scaleable image hover effects. Choose from over 40 hover effect classes from a CSS library weighing in at a minified size of only 19KB. 
 
-[Check out all the hover effect here!](http://www.imagehover.io/)
+[Check out all the hover effects here!](http://www.imagehover.io/)
 
 ##Basic Usage
 1. Include the stylesheet on your document's `<head>`
@@ -13,16 +13,53 @@ Imagehover.css is a lovingly crafted CSS library allowing you to easily implemen
     <link rel="stylesheet" href="imagehover.min.css">
   </head>
   ```
-2. The markup for your image will be as follows
+2. Place the following markup in to your HTML doucment
 
   ```html
 	<figure class="imghvr-fade">
 		<img src="#">
 		  <figcaption>
-		    // Content
+		    // Hover Content
 		  </figcaption>
-	  <a href="#"></a>
 	</figure>
   ```
 
-  Set your image source, add your hover content and set your selected effect class (eg. imghvr-fade) to the containing figure element.
+3. Edit the URL to your image and add your hover content. Them simply set your selected effect class to the containing figure element. In the example above this has been set to 'imghvr'. A full list of hover demonstations and their classes can be found [here!](http://www.imagehover.io/).
+
+##Adding a Link
+To link your image, add an empty &lt;a&gt; tag just after the figcaption element.
+
+  ```html
+	<figure class="imghvr-fade">
+		<img src="#">
+		  <figcaption>
+		    // Hover Content
+		  </figcaption>
+		  <a href="http://www.imagehover.io"></a>
+	</figure>
+  ```
+
+##Background Color
+You can change the background color via some inline CSS added to the figure element like so...
+
+  ```html
+	<figure class="imghvr-fade" style="background-color:#D14233;"">
+		<img src="#">
+		  <figcaption>
+		    // Hover Content
+		  </figcaption>
+	</figure>
+  ```
+
+Alternatively this can be applied via your CSS files. The following example will effect all elements with a imagehover.css class applied.
+
+  ```css
+	*[class^='imghvr-'],
+	*[class*=' imghvr-'] {
+	  background-color: #D14233;
+	}
+  ```
+  
+##Browser Support
+Imagehover.css relies heavely on some CSS3 features inlcuding pseudo-elements, animations, transitions and transforms. Some older browsers will have limited support of these features. 
+
