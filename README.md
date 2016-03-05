@@ -18,9 +18,9 @@ Imagehover.css is a lovingly crafted CSS library allowing you to easily implemen
   ```html
 	<figure class="imghvr-fade">
 		<img src="#">
-	  <figcaption>
-	    // Content
-	  </figcaption>
+		  <figcaption>
+		    // Content
+		  </figcaption>
 	  <a href="#"></a>
 	</figure>
   ```
