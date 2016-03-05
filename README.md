@@ -13,7 +13,7 @@ Imagehover.css is a lovingly crafted CSS library allowing you to easily implemen
     <link rel="stylesheet" href="imagehover.min.css">
   </head>
   ```
-2. Place the following markup in to your HTML doucment
+2. Place the following markup in to your HTML document
 
   ```html
   <figure class="imghvr-fade">
@@ -24,7 +24,7 @@ Imagehover.css is a lovingly crafted CSS library allowing you to easily implemen
   </figure>
   ```
 
-3. Edit the URL to your image and add your hover content. Them simply set your selected effect class to the containing figure element. In the example above this has been set to 'imghvr'. A full list of hover demonstations and their classes can be found [here!](http://www.imagehover.io/).
+3. Edit the URL to your image and add your hover content. Then simply set the imagehover.css class of your choice to the containing figure element. In the example above this has been set to 'imghvr-fade'. A full list of hover effects and their classes can be found [here!](http://www.imagehover.io/).
 
 ##Adding a Link
 To link your image, add an empty &lt;a&gt; tag just after the figcaption element.
