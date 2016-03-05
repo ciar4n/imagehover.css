@@ -43,7 +43,7 @@ To link your image, add an empty &lt;a&gt; tag just after the figcaption element
 You can change the background color via some inline CSS added to the figure element like so...
 
   ```html
-  <figure class="imghvr-fade" style="background-color:#D14233;"">
+  <figure class="imghvr-fade" style="background-color:#D14233;">
     <img src="#">
     <figcaption>
       // Hover Content
