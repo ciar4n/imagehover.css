@@ -5,7 +5,6 @@
  * Made available under a MIT License:
  * http://www.opensource.org/licenses/mit-license.php
 
- * Hover.css Copyright Ian Lunn 2014.
  */
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 body {
@@ -119,6 +118,9 @@ a {
 }
 .effects {
   margin: 3em 0;
+}
+.license {
+  margin-top: 2em;
 }
 h1 {
   text-align: left;
@@ -287,4 +289,8 @@ pre.prettyprint {
   .ad__preview .second {
     margin: 0 2%;
   }
+}
+.ad {
+  margin-top: 2em;
+  text-align: center;
 }
