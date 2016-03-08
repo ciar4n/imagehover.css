@@ -1,3 +1,12 @@
+/*
+ * ImageHover.css - http://www.imagehover.io
+ * Version 1.0
+ * Author: Ciarán Walsh
+
+ * Made available under a MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+
+ */
 *[class^='imghvr-'],
 *[class*=' imghvr-'] {
   position: relative;

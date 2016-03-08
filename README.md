@@ -10,7 +10,7 @@ Imagehover.css is a lovingly crafted CSS library allowing you to easily implemen
 
   ```html
   <head>
-    <link rel="stylesheet" href="imagehover.min.css">
+    <link rel="stylesheet" href="css/imagehover.min.css">
   </head>
   ```
 2. Place the following markup in to your HTML document
@@ -61,5 +61,5 @@ Alternatively this can be applied via your CSS files. The following example will
   ```
   
 ##Browser Support
-Imagehover.css relies heavely on some CSS3 features inlcuding pseudo-elements, animations, transitions and transforms. Some older browsers will have limited support of these features. 
+Imagehover.css relies heavely on some CSS3 features including pseudo-elements, animations, transitions and transforms. Some older browsers will have limited support of these features. 
 
