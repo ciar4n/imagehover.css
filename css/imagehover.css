@@ -82,12 +82,10 @@
 .imghvr-fade:hover figcaption {
   opacity: 1;
 }
-/* imghvr-push-*, imghvr-slide-*
+/* imghvr-push-*
    ----------------------------- */
 [class^='imghvr-push-']:hover figcaption,
-[class*=' imghvr-push-']:hover figcaption,
-[class^='imghvr-slide-']:hover figcaption,
-[class*=' imghvr-slide-']:hover figcaption {
+[class*=' imghvr-push-']:hover figcaption {
   -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
 }
@@ -130,6 +128,13 @@
 .imghvr-push-right:hover > img {
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
+}
+/* imghvr-slide-*
+   ----------------------------- */
+[class^='imghvr-slide-']:hover figcaption,
+[class*=' imghvr-slide-']:hover figcaption {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
 }
 /* imghvr-slide-up
    ----------------------------- */

@@ -1,0 +1,62 @@
+/*
+ * ImageHover.css - http://www.imagehover.io
+ * Version 1.0
+ * Author: Ciarán Walsh
+
+ * Made available under a MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+
+ */
+@import "_mixins.less";
+
+[class^='imghvr-'],[class*=' imghvr-']{
+	position: relative;
+	display: inline-block;
+	margin: 0px;
+	max-width: 100%;
+	background-color: rgba(1, 87, 155, 0.75);
+	color: #fff;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	.translateZ();
+	> img {
+		vertical-align: top;
+		max-width: 100%;
+	}
+    figcaption {
+    	background-color: inherit;
+    	position: absolute;
+    	padding: 30px;
+    	.fill;
+    }
+    h3, p {
+    	margin: 0;
+    	padding: 0;
+    	color: #fff;
+    }
+    a {
+    	.fill;
+    	z-index: 1;
+    }
+}
+
+[class^='imghvr-'], [class*=' imghvr-'], [class^='imghvr-']:before, [class^='imghvr-']:after, [class*=' imghvr-']:before, [class*=' imghvr-']:after, 
+[class^='imghvr-'] *, [class*=' imghvr-'] *, [class^='imghvr-'] *:before, [class^='imghvr-'] *:after, [class*=' imghvr-'] *:before, [class*=' imghvr-'] *:after {
+	.box-sizing(border-box);
+	.transition (all 0.35s ease);
+}
+
+@import "effects/_imghvr-fade";
+@import "effects/_imghvr-push";
+@import "effects/_imghvr-slide";
+@import "effects/_imghvr-reveal";
+@import "effects/_imghvr-hinge";
+@import "effects/_imghvr-flip";
+@import "effects/_imghvr-shutter-out";
+@import "effects/_imghvr-shutter-in";
+@import "effects/_imghvr-fold";
+@import "effects/_imghvr-zoom-in";
+@import "effects/_imghvr-zoom-out";
+@import "effects/_imghvr-blur";

@@ -54,12 +54,12 @@ You can change the background color via some inline CSS added to the figure elem
 Alternatively this can be applied via your CSS files. The following example will effect all elements with a imagehover.css class applied.
 
   ```css
-*[class^='imghvr-'],
-*[class*=' imghvr-'] {
+[class^='imghvr-'],
+[class*=' imghvr-'] {
   background-color: #D14233;
 }
   ```
   
 ##Browser Support
-Imagehover.css relies heavely on some CSS3 features including pseudo-elements, animations, transitions and transforms. Some older browsers will have limited support of these features. 
+Imagehover.css relies heavily on some CSS3 features including pseudo-elements, animations, transitions and transforms. Some older browsers will have limited support of these features. 
 

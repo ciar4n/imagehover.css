@@ -1,0 +1,18 @@
+ /* imghvr-blur
+   ----------------------------- */
+.imghvr-blur {
+	figcaption {
+		opacity: 0;
+	}
+	&:hover {
+		> img {
+			.blur(30px);
+			.scale(1.2);
+			opacity: 0;
+		}
+		figcaption {
+			opacity: 1;
+			.transition-delay(0.2s);
+		}
+	}
+}

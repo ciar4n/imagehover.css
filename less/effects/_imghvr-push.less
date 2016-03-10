@@ -1,0 +1,58 @@
+/* imghvr-push-*
+   ----------------------------- */
+[class^='imghvr-push-'], [class*=' imghvr-push-'] {
+	&:hover {
+		figcaption {
+			.translate(0,0);
+		}
+	}
+}
+ /* imghvr-push-up
+   ----------------------------- */
+.imghvr-push-up {
+	figcaption {
+		.translateY(100%);
+	}
+	&:hover {
+		> img {
+			.translateY(-100%);
+		}
+	}
+}
+ /* imghvr-push-down
+   ----------------------------- */
+.imghvr-push-down {
+	figcaption {
+		.translateY(-100%);
+	}
+	&:hover {
+		> img {
+			.translateY(100%);
+		}
+	}
+}
+
+ /* imghvr-push-left
+   ----------------------------- */
+.imghvr-push-left {
+	figcaption {
+		.translateX(100%);
+	}
+	&:hover {
+		> img {
+			.translateX(-100%);
+		}
+	}
+}
+ /* imghvr-push--right
+   ----------------------------- */
+.imghvr-push-right {
+	figcaption {
+		.translateX(-100%);
+	}
+	&:hover {
+		> img {
+			.translateX(100%);
+		}
+	}
+}

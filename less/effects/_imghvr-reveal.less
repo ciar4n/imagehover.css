@@ -1,0 +1,49 @@
+ /* imghvr-reveal-*
+   ----------------------------- */
+[class^='imghvr-reveal-'],[class*=' imghvr-reveal-'] {
+	&:before {
+		.fill;
+		content: '';
+		background-color: inherit;
+	}
+	figcaption {
+		opacity: 0;
+	}
+	&:hover {
+		&:before {
+			.translate(0,0);
+		}
+		figcaption {
+			opacity: 1;
+			.transition-delay(0.2s);
+		}
+	}
+}
+ /* imghvr-reveal-up
+   ----------------------------- */
+.imghvr-reveal-up {
+	&:before {
+		.translateY(100%);
+	}
+}
+ /* imghvr-reveal-down
+   ----------------------------- */
+.imghvr-reveal-down {
+	&:before {
+		.translateY(-100%);
+	}
+}
+ /* imghvr-reveal-left
+   ----------------------------- */
+.imghvr-reveal-left {
+	&:before {
+		.translateX(100%);
+	}
+}
+ /* imghvr-reveal-right
+   ----------------------------- */
+.imghvr-reveal-right {
+	&:before {
+		.translateX(-100%);
+	}
+}

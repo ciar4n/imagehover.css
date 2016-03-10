@@ -1,0 +1,218 @@
+ /* imghvr-zoom-out*
+   ----------------------------- */
+[class^='imghvr-zoom-out'], [class*=' imghvr-zoom-out'] {
+	> img {
+	}
+	figcaption {
+		.transform(scale(0.5));
+		.transform-origin(50%,50%);
+		opacity: 0;
+	}
+	&:hover, &.hover {
+		figcaption {
+			.transform(scale(1));
+			opacity: 1;
+			.transition-delay(0.3s);
+		}
+	}
+}
+ /* imghvr-zoom-out
+   ----------------------------- */
+.imghvr-zoom-out {
+	&:hover {
+		> img {
+			.scale(0.5);
+			opacity: 0;
+		}
+	}
+}
+ /* imghvr-zoom-out-up
+   ----------------------------- */
+.imghvr-zoom-out-up {
+	&:hover, &.hover {
+		> img {
+			.animation(imghvr-zoom-out-up 0.4s linear);
+	        .animation-iteration-count(1);
+	        .animation-fill-mode(forwards);
+		}
+	}
+}
+@-webkit-keyframes imghvr-zoom-out-up
+{
+    50%
+    {
+        .transform(scale(0.8), translateY(0%));
+        opacity: 0.5;
+    }
+    100%
+    {
+        .transform(scale(0.8), translateY(-150%));
+        opacity: 0.5;
+    }
+}
+@keyframes imghvr-zoom-out-up
+{
+    50%
+    {
+        .transform(scale(0.8), translateY(0%));
+        opacity: 0.5;
+    }
+    100%
+    {
+        .transform(scale(0.8), translateY(-150%));
+        opacity: 0.5;
+    }
+}
+ /* imghvr-zoom-out-down
+   ----------------------------- */
+.imghvr-zoom-out-down {
+	&:hover, &.hover {
+		> img {
+			.animation(imghvr-zoom-out-down 0.4s linear);
+	        .animation-iteration-count(1);
+	        .animation-fill-mode(forwards);
+		}
+	}
+}
+@-webkit-keyframes imghvr-zoom-out-down
+{
+    50%
+    {
+        .transform(scale(0.8), translateY(0%));
+        opacity: 0.5;
+    }
+    100%
+    {
+        .transform(scale(0.8), translateY(150%));
+        opacity: 0.5;
+    }
+}
+@keyframes imghvr-zoom-out-down
+{
+    50%
+    {
+        .transform(scale(0.8), translateY(0%));
+        opacity: 0.5;
+    }
+    100%
+    {
+        .transform(scale(0.8), translateY(150%));
+        opacity: 0.5;
+    }
+}
+ /* imghvr-zoom-out-left
+   ----------------------------- */
+.imghvr-zoom-out-left {
+	&:hover, &.hover {
+		> img {
+			.animation(imghvr-zoom-out-left 0.4s linear);
+	        .animation-iteration-count(1);
+	        .animation-fill-mode(forwards);
+		}
+	}
+}
+@-webkit-keyframes imghvr-zoom-out-left
+{
+    50%
+    {
+        .transform(scale(0.8), translateX(0%));
+        opacity: 0.5;
+    }
+    100%
+    {
+        .transform(scale(0.8), translateX(-150%));
+        opacity: 0.5;
+    }
+}
+@keyframes imghvr-zoom-out-left
+{
+    50%
+    {
+        .transform(scale(0.8), translateX(0%));
+        opacity: 0.5;
+    }
+    100%
+    {
+        .transform(scale(0.8), translateX(-150%));
+        opacity: 0.5;
+    }
+}
+ /* imghvr-zoom-out-right
+   ----------------------------- */
+.imghvr-zoom-out-right {
+	&:hover, &.hover {
+		> img {
+			.animation(imghvr-zoom-out-right 0.4s linear);
+	        .animation-iteration-count(1);
+	        .animation-fill-mode(forwards);
+		}
+	}
+}
+@-webkit-keyframes imghvr-zoom-out-right
+{
+    50%
+    {
+        .transform(scale(0.8), translateX(0%));
+        opacity: 0.5;
+    }
+    100%
+    {
+        .transform(scale(0.8), translateX(150%));
+        opacity: 0.5;
+    }
+}
+@keyframes imghvr-zoom-out-right
+{
+    50%
+    {
+        .transform(scale(0.8), translateX(0%));
+        opacity: 0.5;
+    }
+    100%
+    {
+        .transform(scale(0.8), translateX(150%));
+        opacity: 0.5;
+    }
+}
+ /* imghvr-zoom-out-flip-horiz
+   ----------------------------- */
+.imghvr-zoom-out-flip-horiz {
+	.perspective(50em);
+	figcaption {
+		opacity: 0;
+		.transform(rotateX(90deg), translateY(-100%), scale(0.5));
+	}
+	&:hover, &.hover {
+		> img {
+			.transform(rotateX(-100deg), translateY(50%), scale(0.5));
+			opacity: 0;
+			.transition-delay(0);
+		}
+		figcaption {
+			.transform(rotateX(0), translateY(0%), scale(1));
+			opacity: 1;
+			.transition-delay(0.3s);
+		}
+	}
+}
+ /* imghvr-zoom-out-flip-vert
+   ----------------------------- */
+.imghvr-zoom-out-flip-vert {
+	.perspective(50em);
+	figcaption {
+		opacity: 0;
+		.transform(rotateY(90deg), translate(50%, 0), scale(0.5));
+	}
+	&:hover, &.hover {
+		> img {
+			.transform(rotateY(-100deg), translateX(50%), scale(0.5));
+			opacity: 0;
+			.transition-delay(0);
+		}
+		figcaption {
+			.transform(rotateY(0), translate(0,0), scale(1));
+			opacity: 1;
+			.transition-delay(0.3s);
+		}
+	}
+}

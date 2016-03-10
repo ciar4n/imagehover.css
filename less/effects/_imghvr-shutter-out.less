@@ -1,0 +1,89 @@
+ /* imghvr-shutter-out-*
+   ----------------------------- */
+[class^='imghvr-shutter-out-'], [class*=' imghvr-shutter-out-'] {
+	&:before {
+		background: inherit;
+		position: absolute;
+		content: ''; 
+		.transition-delay(0.1s);
+	}
+	figcaption {
+		opacity: 0;
+		.transition-delay(0s);
+	}
+	&:hover {
+		&:before {
+			.transition-delay(0s);
+		}
+		figcaption {
+			opacity: 1;
+			.transition-delay(0.1s);
+		}
+	}
+}
+ /* imghvr-shutter-out-horiz
+   ----------------------------- */
+.imghvr-shutter-out-horiz {
+	&:before {
+		left: 50%;
+		right: 50%;
+		top: 0;
+		bottom: 0;
+	}
+	&:hover {
+		&:before {
+			left: 0;
+			right: 0;
+		}
+	}
+}
+ /* imghvr-shutter-out-vert
+   ----------------------------- */
+.imghvr-shutter-out-vert {
+	&:before {
+		top: 50%;
+		bottom: 50%;
+		left: 0;
+		right: 0;
+	}
+	&:hover {
+		&:before {
+			top: 0;
+			bottom: 0;
+		}
+	}
+}
+ /* imghvr-shutter-out-diag-1
+   ----------------------------- */
+.imghvr-shutter-out-diag-1 {
+	&:before {
+		top: 50%;
+		bottom: 50%;
+		left: -35%;
+		right: -35%;
+		.rotate(45deg);
+	}
+	&:hover {
+		&:before {
+			top: -35%;
+			bottom: -35%;
+		}
+	}
+}
+ /* imghvr-shutter-out-diag-2
+   ----------------------------- */
+.imghvr-shutter-out-diag-2 {
+	&:before {
+		top: 50%;
+		bottom: 50%;
+		left: -35%;
+		right: -35%;
+		.rotate(-45deg);
+	}
+	&:hover {
+		&:before {
+			top: -35%;
+			bottom: -35%;
+		}
+	}
+}
