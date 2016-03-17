@@ -1,0 +1,14 @@
+ /* imghvr-zoom-in
+   ----------------------------- */
+.imghvr-zoom-in {
+	figcaption {
+		opacity: 0;
+		@include transform(scale(0.5));
+	}
+	&:hover {
+		figcaption {
+			@include transform(scale(1));
+			opacity: 1;
+		}
+	}
+}

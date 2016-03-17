@@ -1,0 +1,125 @@
+ /* imghvr-shutter-in-*
+   ----------------------------- */
+[class^='imghvr-shutter-in-'], [class*=' imghvr-shutter-in-'] {
+	&:after, &:before {
+		background: inherit;
+		position: absolute;
+		content: ''; 
+	}
+	&:after {
+		top: 0;
+		left: 0;
+	}
+	&:before {
+		right: 0;
+		bottom: 0;
+	}
+	figcaption {
+		opacity: 0;
+		z-index: 1;
+	}
+	&:hover {
+		figcaption {
+			opacity: 1;
+			@include transition-delay(0.2s);
+		}
+	}
+}
+ /* imghvr-shutter-in-horiz
+   ----------------------------- */
+.imghvr-shutter-in-horiz {
+	&:after, &:before {
+		width: 0;
+		height: 100%;
+	}
+	&:hover {
+		&:after, &:before {
+			width: 50%;
+		}
+	}
+}
+ /* imghvr-shutter-in-vert
+   ----------------------------- */
+.imghvr-shutter-in-vert {
+	&:after, &:before {
+		height: 0;
+		width: 100%;
+	}
+	&:hover {
+		&:after, &:before {
+			height: 50%;
+		}
+	}
+}
+ /* imghvr-shutter-in-out-horiz
+   ----------------------------- */
+.imghvr-shutter-in-out-horiz {
+	&:after, &:before {
+		width: 0;
+		height: 100%;
+	}
+	&:hover {
+		&:after, &:before {
+			width: 100%;
+		}
+	}
+}
+ /* imghvr-shutter-in-out-vert
+   ----------------------------- */
+.imghvr-shutter-in-out-vert {
+	&:after, &:before {
+		height: 0;
+		width: 100%;
+	}
+	&:hover {
+		&:after, &:before {
+			height: 100%;
+		}
+	}
+}
+ /* imghvr-shutter-in-out-diag-1
+   ----------------------------- */
+.imghvr-shutter-in-out-diag-1 {
+	&:after, &:before {
+		width: 200%;
+		height: 200%;
+		@include transition (all 0.6s ease);
+	}
+	&:after {
+		@include transform(skew(-45deg) translateX(-150%));
+	}
+	&:before {
+		@include transform(skew(-45deg) translateX(150%));
+	}
+	&:hover {
+		&:after {
+			@include transform(skew(-45deg) translateX(-50%));
+		}
+		&:before {
+			@include transform(skew(-45deg) translateX(50%));
+		} 
+	}
+}
+ /* imghvr-shutter-in-out-diag-2
+   ----------------------------- */
+.imghvr-shutter-in-out-diag-2 {
+	&:after, &:before {
+		width: 200%;
+		height: 200%;
+		@include transition(all 0.6s ease);
+	}
+	&:after {
+		@include transform(skew(45deg) translateX(-100%));
+	}
+	&:before {
+		@include transform(skew(45deg) translateX(100%));
+	}
+	&:hover {
+		&:after {
+			@include transform(skew(45deg) translateX(0%));
+		}
+		&:before {
+			@include transform(skew(45deg) translateX(0%));
+		} 
+	}
+}

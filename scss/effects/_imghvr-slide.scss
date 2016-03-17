@@ -1,0 +1,40 @@
+ /* imghvr-slide-*
+   ----------------------------- */
+[class^='imghvr-slide-'], [class*=' imghvr-slide-'] {
+	&:hover {
+		figcaption {
+			@include transform(translate(0,0));
+		}
+	}
+}
+ /* imghvr-slide-up
+   ----------------------------- */
+.imghvr-slide-up {
+	figcaption {
+		@include transform(translateY(100%));
+		background-color: inherit;
+	}
+}
+ /* imghvr-slide-down
+   ----------------------------- */
+.imghvr-slide-down {
+	figcaption {
+		@include transform(translateY(-100%));
+		background-color: inherit;
+	}
+}
+ /* imghvr-slide-left
+   ----------------------------- */
+.imghvr-slide-left {
+	figcaption {
+		@include transform(translateX(100%));
+		background-color: inherit;
+	}
+}
+ /* imghvr-slide-right
+   ----------------------------- */
+.imghvr-slide-right {
+	figcaption {
+		@include transform(translateX(-100%));
+	}
+}

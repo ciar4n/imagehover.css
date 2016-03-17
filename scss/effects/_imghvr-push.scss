@@ -1,0 +1,58 @@
+/* imghvr-push-*
+   ----------------------------- */
+[class^='imghvr-push-'], [class*=' imghvr-push-'] {
+	&:hover {
+		figcaption {
+			@include transform(translate(0,0));
+		}
+	}
+}
+ /* imghvr-push-up
+   ----------------------------- */
+.imghvr-push-up {
+	figcaption {
+		@include transform(translateY(100%));
+	}
+	&:hover {
+		> img {
+			@include transform(translateY(-100%));
+		}
+	}
+}
+ /* imghvr-push-down
+   ----------------------------- */
+.imghvr-push-down {
+	figcaption {
+		@include transform(translateY(-100%));
+	}
+	&:hover {
+		> img {
+			@include transform(translateY(100%));
+		}
+	}
+}
+
+ /* imghvr-push-left
+   ----------------------------- */
+.imghvr-push-left {
+	figcaption {
+		@include transform(translateX(100%));
+	}
+	&:hover {
+		> img {
+			@include transform(translateX(-100%));
+		}
+	}
+}
+ /* imghvr-push--right
+   ----------------------------- */
+.imghvr-push-right {
+	figcaption {
+		@include transform(translateX(-100%));
+	}
+	&:hover {
+		> img {
+			@include transform(translateX(100%));
+		}
+	}
+}
