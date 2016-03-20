@@ -1,0 +1,49 @@
+ /* imghvr-reveal-*
+   ----------------------------- */
+[class^='imghvr-reveal-'],[class*=' imghvr-reveal-'] {
+	&:before {
+		@include fill;
+		content: '';
+		background-color: inherit;
+	}
+	figcaption {
+		opacity: 0;
+	}
+	&:hover {
+		&:before {
+			@include transform(translate(0,0));
+		}
+		figcaption {
+			opacity: 1;
+			@include transition-delay(0.2s);
+		}
+	}
+}
+ /* imghvr-reveal-up
+   ----------------------------- */
+.imghvr-reveal-up {
+	&:before {
+		@include transform(translateY(100%));
+	}
+}
+ /* imghvr-reveal-down
+   ----------------------------- */
+.imghvr-reveal-down {
+	&:before {
+		@include transform(translateY(-100%));
+	}
+}
+ /* imghvr-reveal-left
+   ----------------------------- */
+.imghvr-reveal-left {
+	&:before {
+		@include transform(translateX(100%));
+	}
+}
+ /* imghvr-reveal-right
+   ----------------------------- */
+.imghvr-reveal-right {
+	&:before {
+		@include transform(translateX(-100%));
+	}
+}

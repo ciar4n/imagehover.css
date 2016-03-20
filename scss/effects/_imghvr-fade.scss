@@ -1,0 +1,15 @@
+ /* imghvr-fade
+   ----------------------------- */
+.imghvr-fade {
+	figcaption {
+		opacity: 0;
+	}
+	&:hover {
+		> img {
+			opacity: 0;
+		}
+		figcaption {
+			opacity: 1;
+		}
+	}
+}

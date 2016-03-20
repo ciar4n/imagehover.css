@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/// Global variables to enable or disable vendor prefixes
+
+$prefix-for-webkit:    true !default;
+$prefix-for-mozilla:   false !default;
+$prefix-for-microsoft: false !default;
+$prefix-for-opera:     false !default;
+$prefix-for-spec:      true !default;

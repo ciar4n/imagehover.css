@@ -1,0 +1,218 @@
+ /* imghvr-zoom-out*
+   ----------------------------- */
+[class^='imghvr-zoom-out'], [class*=' imghvr-zoom-out'] {
+	> img {
+	}
+	figcaption {
+		@include transform(scale(0.5));
+		@include transform-origin(50% 50%);
+		opacity: 0;
+	}
+	&:hover, &.hover {
+		figcaption {
+			@include transform(scale(1));
+			opacity: 1;
+			@include transition-delay(0.3s);
+		}
+	}
+}
+ /* imghvr-zoom-out
+   ----------------------------- */
+.imghvr-zoom-out {
+	&:hover {
+		> img {
+			@include transform(scale(0.5));
+			opacity: 0;
+		}
+	}
+}
+ /* imghvr-zoom-out-up
+   ----------------------------- */
+.imghvr-zoom-out-up {
+	&:hover, &.hover {
+		> img {
+			@include animation(imghvr-zoom-out-up 0.4s linear);
+	        @include animation-iteration-count(1);
+	        @include animation-fill-mode(forwards);
+		}
+	}
+}
+@-webkit-keyframes imghvr-zoom-out-up
+{
+    50%
+    {
+        @include transform(scale(0.8) translateY(0%));
+        opacity: 0.5;
+    }
+    100%
+    {
+        @include transform(scale(0.8) translateY(-150%));
+        opacity: 0.5;
+    }
+}
+@keyframes imghvr-zoom-out-up
+{
+    50%
+    {
+        @include transform(scale(0.8) translateY(0%));
+        opacity: 0.5;
+    }
+    100%
+    {
+        @include transform(scale(0.8) translateY(-150%));
+        opacity: 0.5;
+    }
+}
+ /* imghvr-zoom-out-down
+   ----------------------------- */
+.imghvr-zoom-out-down {
+	&:hover, &.hover {
+		> img {
+			@include animation(imghvr-zoom-out-down 0.4s linear);
+	        @include animation-iteration-count(1);
+	        @include animation-fill-mode(forwards);
+		}
+	}
+}
+@-webkit-keyframes imghvr-zoom-out-down
+{
+    50%
+    {
+        @include transform(scale(0.8) translateY(0%));
+        opacity: 0.5;
+    }
+    100%
+    {
+        @include transform(scale(0.8) translateY(150%));
+        opacity: 0.5;
+    }
+}
+@keyframes imghvr-zoom-out-down
+{
+    50%
+    {
+        @include transform(scale(0.8) translateY(0%));
+        opacity: 0.5;
+    }
+    100%
+    {
+        @include transform(scale(0.8) translateY(150%));
+        opacity: 0.5;
+    }
+}
+ /* imghvr-zoom-out-left
+   ----------------------------- */
+.imghvr-zoom-out-left {
+	&:hover, &.hover {
+		> img {
+			@include animation(imghvr-zoom-out-left 0.4s linear);
+	        @include animation-iteration-count(1);
+	        @include animation-fill-mode(forwards);
+		}
+	}
+}
+@-webkit-keyframes imghvr-zoom-out-left
+{
+    50%
+    {
+        @include transform(scale(0.8) translateX(0%));
+        opacity: 0.5;
+    }
+    100%
+    {
+        @include transform(scale(0.8) translateX(-150%));
+        opacity: 0.5;
+    }
+}
+@keyframes imghvr-zoom-out-left
+{
+    50%
+    {
+        @include transform(scale(0.8) translateX(0%));
+        opacity: 0.5;
+    }
+    100%
+    {
+        @include transform(scale(0.8) translateX(-150%));
+        opacity: 0.5;
+    }
+}
+ /* imghvr-zoom-out-right
+   ----------------------------- */
+.imghvr-zoom-out-right {
+	&:hover, &.hover {
+		> img {
+			@include animation(imghvr-zoom-out-right 0.4s linear);
+	        @include animation-iteration-count(1);
+	        @include animation-fill-mode(forwards);
+		}
+	}
+}
+@-webkit-keyframes imghvr-zoom-out-right
+{
+    50%
+    {
+        @include transform(scale(0.8) translateX(0%));
+        opacity: 0.5;
+    }
+    100%
+    {
+        @include transform(scale(0.8) translateX(150%));
+        opacity: 0.5;
+    }
+}
+@keyframes imghvr-zoom-out-right
+{
+    50%
+    {
+        @include transform(scale(0.8) translateX(0%));
+        opacity: 0.5;
+    }
+    100%
+    {
+        @include transform(scale(0.8) translateX(150%));
+        opacity: 0.5;
+    }
+}
+ /* imghvr-zoom-out-flip-horiz
+   ----------------------------- */
+.imghvr-zoom-out-flip-horiz {
+	@include perspective(50em);
+	figcaption {
+		opacity: 0;
+		@include transform(rotateX(90deg) translateY(-100%) scale(0.5));
+	}
+	&:hover, &.hover {
+		> img {
+			@include transform(rotateX(-100deg) translateY(50%) scale(0.5));
+			opacity: 0;
+			@include transition-delay(0);
+		}
+		figcaption {
+			@include transform(rotateX(0) translateY(0%) scale(1));
+			opacity: 1;
+			@include transition-delay(0.3s);
+		}
+	}
+}
+ /* imghvr-zoom-out-flip-vert
+   ----------------------------- */
+.imghvr-zoom-out-flip-vert {
+	@include perspective(50em);
+	figcaption {
+		opacity: 0;
+		@include transform(rotateY(90deg) translate(50%, 0) scale(0.5));
+	}
+	&:hover, &.hover {
+		> img {
+			@include transform(rotateY(-100deg) translateX(50%) scale(0.5));
+			opacity: 0;
+			@include transition-delay(0);
+		}
+		figcaption {
+			@include transform(rotateY(0) translate(0,0) scale(1));
+			opacity: 1;
+			@include transition-delay(0.3s);
+		}
+	}
+}

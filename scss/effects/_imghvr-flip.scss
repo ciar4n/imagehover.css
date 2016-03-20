@@ -1,0 +1,82 @@
+ /* imghvr-flip-*
+   ----------------------------- */
+[class^='imghvr-flip-'], [class*=' imghvr-flip-'] {
+	@include perspective(50em);
+	img {
+		backface-visibility: hidden;
+	}
+	figcaption {
+		opacity: 0;
+	}
+	&:hover {
+		> img {
+			opacity: 0;
+		}
+		figcaption {
+			opacity: 1;
+			@include transition-delay(0.15s);
+		}
+	}
+}
+ /* imghvr-flip-horiz
+   ----------------------------- */
+.imghvr-flip-horiz {
+	figcaption {
+		@include transform(rotateX(90deg));
+		@include transform-origin(0% 50%);
+	}
+	&:hover {
+		img {
+			@include transform(rotateX(-180deg));
+		}
+		figcaption {
+			@include transform(rotateX(0deg));
+		}
+	}
+}
+ /* imghvr-flip-vert
+   ----------------------------- */
+.imghvr-flip-vert {
+	figcaption {
+		@include transform(rotateY(90deg));
+		@include transform-origin(50% 0%);
+	}
+	&:hover {
+		> img {
+			@include transform(rotateY(-180deg));
+		}
+		figcaption {
+			@include transform(rotateY(0deg));
+		}
+	}
+}
+ /* imghvr-flip-diag-1
+   ----------------------------- */
+.imghvr-flip-diag-1 {
+	figcaption {
+		@include transform(rotate3d(1,-1,0,100deg));
+	}
+	&:hover {
+		> img {
+			@include transform(rotate3d(-1,1,0,100deg));
+		}
+		figcaption {
+			@include transform(rotate3d(0,0,0,0deg));
+		}
+	}
+}
+ /* imghvr-flip-diag-2
+   ----------------------------- */
+.imghvr-flip-diag-2 {
+	figcaption {
+		@include transform(rotate3d(1,1,0,100deg));
+	}
+	&:hover {
+		> img {
+			@include transform(rotate3d(-1,-1,0,100deg));
+		}
+		figcaption {
+			@include transform(rotate3d(0,0,0,0deg));
+		}
+	}
+}
