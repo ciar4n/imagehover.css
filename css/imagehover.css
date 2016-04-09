@@ -45,8 +45,8 @@
   padding: 0;
   color: #fff;
 }
-[class^='imghvr-'] a,
-[class*=' imghvr-'] a {
+[class^='imghvr-'] > a,
+[class*=' imghvr-'] > a {
   position: absolute;
   top: 0;
   bottom: 0;
