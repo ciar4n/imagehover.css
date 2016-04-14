@@ -12,7 +12,7 @@
 		figcaption {
 			@include transform(scale(1));
 			opacity: 1;
-			@include transition-delay(0.3s);
+			@include transition-delay($transition-duration);
 		}
 	}
 }
@@ -31,7 +31,7 @@
 .imghvr-zoom-out-up {
 	&:hover, &.hover {
 		> img {
-			@include animation(imghvr-zoom-out-up 0.4s linear);
+			@include animation(imghvr-zoom-out-up $transition-duration * 1.15 linear);
 	        @include animation-iteration-count(1);
 	        @include animation-fill-mode(forwards);
 		}
@@ -68,7 +68,7 @@
 .imghvr-zoom-out-down {
 	&:hover, &.hover {
 		> img {
-			@include animation(imghvr-zoom-out-down 0.4s linear);
+			@include animation(imghvr-zoom-out-down ($transition-duration * 1.15) linear);
 	        @include animation-iteration-count(1);
 	        @include animation-fill-mode(forwards);
 		}
@@ -105,7 +105,7 @@
 .imghvr-zoom-out-left {
 	&:hover, &.hover {
 		> img {
-			@include animation(imghvr-zoom-out-left 0.4s linear);
+			@include animation(imghvr-zoom-out-left ($transition-duration * 1.15) linear);
 	        @include animation-iteration-count(1);
 	        @include animation-fill-mode(forwards);
 		}
@@ -142,7 +142,7 @@
 .imghvr-zoom-out-right {
 	&:hover, &.hover {
 		> img {
-			@include animation(imghvr-zoom-out-right 0.4s linear);
+			@include animation(imghvr-zoom-out-right ($transition-duration * 1.15) linear);
 	        @include animation-iteration-count(1);
 	        @include animation-fill-mode(forwards);
 		}
@@ -191,7 +191,7 @@
 		figcaption {
 			@include transform(rotateX(0) translateY(0%) scale(1));
 			opacity: 1;
-			@include transition-delay(0.3s);
+			@include transition-delay($transition-duration);
 		}
 	}
 }
@@ -212,7 +212,7 @@
 		figcaption {
 			@include transform(rotateY(0) translate(0,0) scale(1));
 			opacity: 1;
-			@include transition-delay(0.3s);
+			@include transition-delay($transition-duration);
 		}
 	}
 }

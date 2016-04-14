@@ -1,4 +1,23 @@
-@import "bourbon/bourbon";
+/*
+ * ImageHover.css - http://www.imagehover.io
+ * Version 1.0
+ * Author: Ciarán Walsh
+
+ * Made available under a MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+
+ */
+ @import "bourbon/bourbon";
+
+$image-bg: #2266a5;
+$figcaption-bg: #135796;
+$figcaption-padding: 30px;
+$text-color: #ffffff;
+$border-color: #ffffff;
+$border-margin: 5px;
+$border-width: 4px;
+$transition-duration: 0.35s;
+$shift-distance: 10px;
 
 @mixin fill($padding: 0) {
   position: absolute;
@@ -9,35 +28,34 @@
 }
 
 [class^='imghvr-'],[class*=' imghvr-'] {
-	position: relative;
-	display: inline-block;
-	margin: 0px;
-	max-width: 100%;
-	background-color: rgba(1, 87, 155, 0.75);
-	color: #fff;
-	overflow: hidden;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-moz-osx-font-smoothing: grayscale;
-	@include transform(translateZ(0));
-	> img {
-		vertical-align: top;
-		max-width: 100%;
-	}
+  position: relative;
+  display: inline-block;
+  margin: 0px;
+  max-width: 100%;
+  background-color: $image-bg;
+  color: #fff;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  @include transform(translateZ(0));
+  > img {
+    vertical-align: top;
+    max-width: 100%;
+  }
     figcaption {
-    	background-color: inherit;
-    	position: absolute;
-    	padding: 30px;
-    	@include fill;
+      background-color: $figcaption-bg;
+      position: absolute;
+      padding: 30px;
+      @include fill;
+      color: $text-color;
+      h1, h2, h3, h4, h5, h6 {
+        color: $text-color;
+      }
     }
-    h3, p {
-    	margin: 0;
-    	padding: 0;
-    	color: #fff;
-    }
-    > a {
-    	@include fill;
-    	z-index: 1;
+    a {
+      @include fill;
+      z-index: 1;
     }
 }
 
@@ -45,8 +63,8 @@
 [class^='imghvr-']:after, [class*=' imghvr-']:before, [class*=' imghvr-']:after, 
 [class^='imghvr-'] *, [class*=' imghvr-'] *, [class^='imghvr-'] *:before, 
 [class^='imghvr-'] *:after, [class*=' imghvr-'] *:before, [class*=' imghvr-'] *:after {
-	@include box-sizing(border-box);
-	@include transition (all 0.35s ease);
+  box-sizing: border-box;
+  @include transition (all 0.35s ease);
 }
 
 @import "effects/_imghvr-fade";

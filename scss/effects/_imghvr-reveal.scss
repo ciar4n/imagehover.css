@@ -4,7 +4,7 @@
 	&:before {
 		@include fill;
 		content: '';
-		background-color: inherit;
+		background-color: $figcaption-bg;
 	}
 	figcaption {
 		opacity: 0;
@@ -15,7 +15,7 @@
 		}
 		figcaption {
 			opacity: 1;
-			@include transition-delay(0.2s);
+			@include transition-delay($transition-duration * 0.6);
 		}
 	}
 }
@@ -45,5 +45,34 @@
 .imghvr-reveal-right {
 	&:before {
 		@include transform(translateX(-100%));
+	}
+}
+
+ /* imghvr-reveal-top-left
+   ----------------------------- */
+.imghvr-reveal-top-left {
+	&:before {
+		@include transform(translate(-100%,-100%));
+	}
+}
+ /* imghvr-reveal-top-right
+   ----------------------------- */
+.imghvr-reveal-top-right {
+	&:before {
+		@include transform(translate(100%,-100%));
+	}
+}
+ /* imghvr-reveal-bottom-left
+   ----------------------------- */
+.imghvr-reveal-bottom-left {
+	&:before {
+		@include transform(translate(-100%,100%));
+	}
+}
+ /* imghvr-reveal-bottom-right
+   ----------------------------- */
+.imghvr-reveal-bottom-right {
+	&:before {
+		@include transform(translate(100%,100%));
 	}
 }

@@ -2,7 +2,7 @@
    ----------------------------- */
 [class^='imghvr-shutter-in-'], [class*=' imghvr-shutter-in-'] {
 	&:after, &:before {
-		background: inherit;
+		background: $figcaption-bg;
 		position: absolute;
 		content: ''; 
 	}
@@ -21,7 +21,7 @@
 	&:hover {
 		figcaption {
 			opacity: 1;
-			@include transition-delay(0.2s);
+			@include transition-delay($transition-duration * 0.6);
 		}
 	}
 }
@@ -57,6 +57,7 @@
 	&:after, &:before {
 		width: 0;
 		height: 100%;
+		opacity: 0.75;
 	}
 	&:hover {
 		&:after, &:before {
@@ -70,6 +71,7 @@
 	&:after, &:before {
 		height: 0;
 		width: 100%;
+		opacity: 0.75;
 	}
 	&:hover {
 		&:after, &:before {
@@ -84,6 +86,7 @@
 		width: 200%;
 		height: 200%;
 		@include transition (all 0.6s ease);
+		opacity: 0.75;
 	}
 	&:after {
 		@include transform(skew(-45deg) translateX(-150%));
@@ -107,6 +110,7 @@
 		width: 200%;
 		height: 200%;
 		@include transition(all 0.6s ease);
+		opacity: 0.75;
 	}
 	&:after {
 		@include transform(skew(45deg) translateX(-100%));

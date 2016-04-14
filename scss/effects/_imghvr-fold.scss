@@ -17,7 +17,7 @@
 		figcaption {
 			@include transform(rotateX(0) translate3d(0,0%,0) scale(1));
 			opacity: 1;
-			@include transition-delay(0.2s);
+			@include transition-delay($transition-duration * 0.6);
 		}
 	}
 }

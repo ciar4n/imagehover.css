@@ -2,10 +2,10 @@
    ----------------------------- */
 [class^='imghvr-shutter-out-'], [class*=' imghvr-shutter-out-'] {
 	&:before {
-		background: inherit;
+		background: $figcaption-bg;
 		position: absolute;
 		content: ''; 
-		@include transition-delay(0.1s);
+		@include transition-delay($transition-duration * 0.3);
 	}
 	figcaption {
 		opacity: 0;
@@ -17,7 +17,7 @@
 		}
 		figcaption {
 			opacity: 1;
-			@include transition-delay(0.1s);
+			@include transition-delay($transition-duration * 0.3);
 		}
 	}
 }
