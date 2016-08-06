@@ -5,6 +5,12 @@ Imagehover.css is a lovingly crafted CSS library allowing you to easily implemen
 
 [Check out all the hover effects here!](http://www.imagehover.io/)
 
+##Bower
+
+  ```
+  bower install imagehover.css
+  ```
+
 ##Basic Usage
 1. Include the stylesheet on your document's `<head>`
 
