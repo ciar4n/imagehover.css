@@ -50,7 +50,10 @@ To link your image, add an empty &lt;a&gt; tag just after the figcaption element
   </figure>
   ```
 
-## Customizing variables
+## SASS
+`.scss` source files are available if you use Sass as your CSS precompiler. It’s customizable and modular.
+
+### Customizing variables
 Imagehover.css provides a `_custom.scss` file for easy overriding of default variables in `/scss/_variables.scss`. Copy and paste relevant lines from there into the `_custom.scss` file, modify the values, and recompile your Sass to change our default values. **Be sure to remove the `!default` flag from override values.**
 
 For example, to change out the `background-color` and `color` for the `<figcaption>`, you'd do the following:
@@ -64,7 +67,7 @@ For example, to change out the `background-color` and `color` for the `<figcapti
   $text-color:     #9C3636; // Red
   ```
 
-### Variable List
+#### Variable List
 
 You can find and customize these variables in the `_variables.scss` file.
 
@@ -81,6 +84,6 @@ You can find and customize these variables in the `_variables.scss` file.
 | `$shift-distance`      | `10px` (default), or any valid length        | ...                              |
 
   
-##Browser Support
+## Browser Support
 Imagehover.css relies heavily on some CSS3 features including pseudo-elements, animations, transitions and transforms. Some older browsers will have limited support of these features. 
 

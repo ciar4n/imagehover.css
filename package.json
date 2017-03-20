@@ -1,0 +1,28 @@
+{
+  "name": "imagehover.css",
+  "version": "1.0.0",
+  "description": "*A Scaleable & Light Image Hover CSS Library*",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ciar4n/imagehover.css.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ciar4n/imagehover.css/issues"
+  },
+  "homepage": "https://github.com/ciar4n/imagehover.css#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.0.0",
+    "gulp-sourcemaps": "^2.2.0"
+  }
+}
