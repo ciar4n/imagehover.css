@@ -7,17 +7,15 @@
  * http://www.opensource.org/licenses/mit-license.php
 
  */
- @import "bourbon/bourbon";
 
-$image-bg: #2266a5;
-$figcaption-bg: #135796;
-$figcaption-padding: 30px;
-$text-color: #ffffff;
-$border-color: #ffffff;
-$border-margin: 5px;
-$border-width: 4px;
-$transition-duration: 0.35s;
-$shift-distance: 10px;
+// Bourbon
+@import "bourbon/bourbon";
+
+// Default variables
+@import "variables";
+
+// Custom variables
+@import "custom";
 
 @mixin fill($padding: 0) {
   position: absolute;
