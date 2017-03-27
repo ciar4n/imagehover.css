@@ -1,4 +1,4 @@
-/*
+/*!
  * ImageHover.css - http://www.imagehover.io
  * Version 1.0
  * Author: Ciarán Walsh
@@ -22,13 +22,13 @@
   top: $padding;
   bottom: $padding;
   left: $padding;
-  right: $padding; 
+  right: $padding;
 }
 
 [class^='imghvr-'],[class*=' imghvr-'] {
   position: relative;
   display: inline-block;
-  margin: 0px;
+  margin: 0;
   max-width: 100%;
   background-color: $image-bg;
   color: #fff;
@@ -43,8 +43,7 @@
   }
     figcaption {
       background-color: $figcaption-bg;
-      position: absolute;
-      padding: 30px;
+      padding: $figcaption-padding;
       @include fill;
       color: $text-color;
       h1, h2, h3, h4, h5, h6 {
@@ -57,9 +56,9 @@
     }
 }
 
-[class^='imghvr-'], [class*=' imghvr-'], [class^='imghvr-']:before, 
-[class^='imghvr-']:after, [class*=' imghvr-']:before, [class*=' imghvr-']:after, 
-[class^='imghvr-'] *, [class*=' imghvr-'] *, [class^='imghvr-'] *:before, 
+[class^='imghvr-'], [class*=' imghvr-'], [class^='imghvr-']:before,
+[class^='imghvr-']:after, [class*=' imghvr-']:before, [class*=' imghvr-']:after,
+[class^='imghvr-'] *, [class*=' imghvr-'] *, [class^='imghvr-'] *:before,
 [class^='imghvr-'] *:after, [class*=' imghvr-'] *:before, [class*=' imghvr-'] *:after {
   box-sizing: border-box;
   @include transition (all 0.35s ease);

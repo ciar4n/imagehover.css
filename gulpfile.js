@@ -41,7 +41,7 @@ gulp.task('minify', function () {
         .pipe(sourcemaps.init())
         .pipe(sass({
             errLogToConsole: true,
-        }).on('error', scss.logError))
+        }).on('error', sass.logError))
         .pipe(rename('imagehover.min.css'))
         .pipe(cssnano({
             safe: true,
