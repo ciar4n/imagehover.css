@@ -11,7 +11,7 @@ Imagehover.css is a lovingly crafted CSS library allowing you to easily implemen
   bower install imagehover.css
   ```
   
-##CDN
+## CDN
   ```
   https://cdnjs.cloudflare.com/ajax/libs/imagehover.css/1.0/css/imagehover.min.css
   ```
