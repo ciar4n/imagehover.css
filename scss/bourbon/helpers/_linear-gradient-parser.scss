@@ -1,4 +1,12 @@
 @function _linear-gradient-parser($image) {
+  @if $output-bourbon-deprecation-warnings == true {
+    @warn "[Bourbon] [Deprecation] `_linear-gradient-parser` is " +
+    "deprecated and will be removed in 5.0.0.";
+  }
+
+  $user-deprecation-warnings-setting: $output-bourbon-deprecation-warnings;
+  $output-bourbon-deprecation-warnings: false !global;
+
   $image: unquote($image);
   $gradients: ();
   $start: str-index($image, "(");
@@ -36,6 +44,8 @@
       spec-image: $image
     );
   }
+
+  $output-bourbon-deprecation-warnings: $user-deprecation-warnings-setting !global;
 
   @return $gradients;
 }

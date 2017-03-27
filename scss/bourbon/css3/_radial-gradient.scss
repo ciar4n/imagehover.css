@@ -7,6 +7,7 @@
                        $pos: null,
                        $shape-size: null,
                        $fallback: null) {
+  @include _bourbon-deprecate-for-prefixing("radial-gradient");
 
   $data: _radial-arg-parser($g1, $g2, $pos, $shape-size);
   $g1:  nth($data, 1);
@@ -34,6 +35,6 @@
   $shape-size-spec: if(($shape-size-spec != " ") and ($pos == null), "#{$shape-size-spec}, ", "#{$shape-size-spec} ");
 
   background-color:  $fallback-color;
-  background-image: -webkit-radial-gradient(unquote(#{$pos}#{$shape-size}#{$full}));
-  background-image: unquote("radial-gradient(#{$shape-size-spec}#{$pos-spec}#{$full})");
+  background-image: -webkit-radial-gradient(#{$pos}#{$shape-size}#{$full});
+  background-image: radial-gradient(#{$shape-size-spec}#{$pos-spec}#{$full});
 }
