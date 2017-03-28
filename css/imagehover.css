@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*
+/*!
  * ImageHover.css - http://www.imagehover.io
  * Version 1.0
  * Author: Ciarán Walsh
@@ -11,7 +11,7 @@
 [class^='imghvr-'], [class*=' imghvr-'] {
     position: relative;
     display: inline-block;
-    margin: 0px;
+    margin: 0;
     max-width: 100%;
     background-color: #2266a5;
     color: #fff;
@@ -20,6 +20,9 @@
     backface-visibility: hidden;
     -moz-osx-font-smoothing: grayscale;
     -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
     transform: translateZ(0);
 }
 
@@ -30,7 +33,6 @@
 
 [class^='imghvr-'] figcaption, [class*=' imghvr-'] figcaption {
     background-color: #135796;
-    position: absolute;
     padding: 30px;
     position: absolute;
     top: 0;
@@ -59,6 +61,7 @@
 [class^='imghvr-'] *:after, [class*=' imghvr-'] *:before, [class*=' imghvr-'] *:after {
     box-sizing: border-box;
     -webkit-transition: all 0.35s ease;
+    -moz-transition: all 0.35s ease;
     transition: all 0.35s ease;
 }
 
@@ -78,6 +81,9 @@
 
 [class^='imghvr-fade']:hover > img, [class^='imghvr-fade']:hover figcaption, [class*=' imghvr-fade']:hover > img, [class*=' imghvr-fade']:hover figcaption {
     -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
     transform: translate(0, 0);
 }
 
@@ -87,6 +93,9 @@
    ----------------------------- */
 .imghvr-fade-in-up figcaption {
     -webkit-transform: translate(0, 15%);
+    -moz-transform: translate(0, 15%);
+    -ms-transform: translate(0, 15%);
+    -o-transform: translate(0, 15%);
     transform: translate(0, 15%);
 }
 
@@ -94,6 +103,9 @@
    ----------------------------- */
 .imghvr-fade-in-down figcaption {
     -webkit-transform: translate(0, -15%);
+    -moz-transform: translate(0, -15%);
+    -ms-transform: translate(0, -15%);
+    -o-transform: translate(0, -15%);
     transform: translate(0, -15%);
 }
 
@@ -101,6 +113,9 @@
    ----------------------------- */
 .imghvr-fade-in-left figcaption {
     -webkit-transform: translate(-15%, 0);
+    -moz-transform: translate(-15%, 0);
+    -ms-transform: translate(-15%, 0);
+    -o-transform: translate(-15%, 0);
     transform: translate(-15%, 0);
 }
 
@@ -108,6 +123,9 @@
    ----------------------------- */
 .imghvr-fade-in-right figcaption {
     -webkit-transform: translate(15%, 0);
+    -moz-transform: translate(15%, 0);
+    -ms-transform: translate(15%, 0);
+    -o-transform: translate(15%, 0);
     transform: translate(15%, 0);
 }
 
@@ -115,6 +133,9 @@
    ----------------------------- */
 [class^='imghvr-push-']:hover figcaption, [class*=' imghvr-push-']:hover figcaption {
     -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
     transform: translate(0, 0);
 }
 
@@ -122,11 +143,17 @@
    ----------------------------- */
 .imghvr-push-up figcaption {
     -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
     transform: translateY(100%);
 }
 
 .imghvr-push-up:hover > img {
     -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
     transform: translateY(-100%);
 }
 
@@ -134,11 +161,17 @@
    ----------------------------- */
 .imghvr-push-down figcaption {
     -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
     transform: translateY(-100%);
 }
 
 .imghvr-push-down:hover > img {
     -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
     transform: translateY(100%);
 }
 
@@ -146,11 +179,17 @@
    ----------------------------- */
 .imghvr-push-left figcaption {
     -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
     transform: translateX(100%);
 }
 
 .imghvr-push-left:hover > img {
     -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
     transform: translateX(-100%);
 }
 
@@ -158,11 +197,17 @@
    ----------------------------- */
 .imghvr-push-right figcaption {
     -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
     transform: translateX(-100%);
 }
 
 .imghvr-push-right:hover > img {
     -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
     transform: translateX(100%);
 }
 
@@ -170,6 +215,9 @@
    ----------------------------- */
 [class^='imghvr-slide-']:hover figcaption, [class*=' imghvr-slide-']:hover figcaption {
     -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
     transform: translate(0, 0);
 }
 
@@ -177,6 +225,9 @@
    ----------------------------- */
 .imghvr-slide-up figcaption {
     -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
     transform: translateY(100%);
 }
 
@@ -184,6 +235,9 @@
    ----------------------------- */
 .imghvr-slide-down figcaption {
     -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
     transform: translateY(-100%);
 }
 
@@ -191,6 +245,9 @@
    ----------------------------- */
 .imghvr-slide-left figcaption {
     -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
     transform: translateX(100%);
 }
 
@@ -198,6 +255,9 @@
    ----------------------------- */
 .imghvr-slide-right figcaption {
     -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
     transform: translateX(-100%);
 }
 
@@ -205,6 +265,9 @@
    ----------------------------- */
 .imghvr-slide-top-left figcaption {
     -webkit-transform: translate(-100%, -100%);
+    -moz-transform: translate(-100%, -100%);
+    -ms-transform: translate(-100%, -100%);
+    -o-transform: translate(-100%, -100%);
     transform: translate(-100%, -100%);
 }
 
@@ -212,6 +275,9 @@
    ----------------------------- */
 .imghvr-slide-top-right figcaption {
     -webkit-transform: translate(100%, -100%);
+    -moz-transform: translate(100%, -100%);
+    -ms-transform: translate(100%, -100%);
+    -o-transform: translate(100%, -100%);
     transform: translate(100%, -100%);
 }
 
@@ -219,6 +285,9 @@
    ----------------------------- */
 .imghvr-slide-bottom-left figcaption {
     -webkit-transform: translate(-100%, 100%);
+    -moz-transform: translate(-100%, 100%);
+    -ms-transform: translate(-100%, 100%);
+    -o-transform: translate(-100%, 100%);
     transform: translate(-100%, 100%);
 }
 
@@ -226,6 +295,9 @@
    ----------------------------- */
 .imghvr-slide-bottom-right figcaption {
     -webkit-transform: translate(100%, 100%);
+    -moz-transform: translate(100%, 100%);
+    -ms-transform: translate(100%, 100%);
+    -o-transform: translate(100%, 100%);
     transform: translate(100%, 100%);
 }
 
@@ -247,12 +319,16 @@
 
 [class^='imghvr-reveal-']:hover:before, [class*=' imghvr-reveal-']:hover:before {
     -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
     transform: translate(0, 0);
 }
 
 [class^='imghvr-reveal-']:hover figcaption, [class*=' imghvr-reveal-']:hover figcaption {
     opacity: 1;
     -webkit-transition-delay: 0.21s;
+    -moz-transition-delay: 0.21s;
     transition-delay: 0.21s;
 }
 
@@ -260,6 +336,9 @@
    ----------------------------- */
 .imghvr-reveal-up:before {
     -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
     transform: translateY(100%);
 }
 
@@ -267,6 +346,9 @@
    ----------------------------- */
 .imghvr-reveal-down:before {
     -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
     transform: translateY(-100%);
 }
 
@@ -274,6 +356,9 @@
    ----------------------------- */
 .imghvr-reveal-left:before {
     -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
     transform: translateX(100%);
 }
 
@@ -281,6 +366,9 @@
    ----------------------------- */
 .imghvr-reveal-right:before {
     -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
     transform: translateX(-100%);
 }
 
@@ -288,6 +376,9 @@
    ----------------------------- */
 .imghvr-reveal-top-left:before {
     -webkit-transform: translate(-100%, -100%);
+    -moz-transform: translate(-100%, -100%);
+    -ms-transform: translate(-100%, -100%);
+    -o-transform: translate(-100%, -100%);
     transform: translate(-100%, -100%);
 }
 
@@ -295,6 +386,9 @@
    ----------------------------- */
 .imghvr-reveal-top-right:before {
     -webkit-transform: translate(100%, -100%);
+    -moz-transform: translate(100%, -100%);
+    -ms-transform: translate(100%, -100%);
+    -o-transform: translate(100%, -100%);
     transform: translate(100%, -100%);
 }
 
@@ -302,6 +396,9 @@
    ----------------------------- */
 .imghvr-reveal-bottom-left:before {
     -webkit-transform: translate(-100%, 100%);
+    -moz-transform: translate(-100%, 100%);
+    -ms-transform: translate(-100%, 100%);
+    -o-transform: translate(-100%, 100%);
     transform: translate(-100%, 100%);
 }
 
@@ -309,6 +406,9 @@
    ----------------------------- */
 .imghvr-reveal-bottom-right:before {
     -webkit-transform: translate(100%, 100%);
+    -moz-transform: translate(100%, 100%);
+    -ms-transform: translate(100%, 100%);
+    -o-transform: translate(100%, 100%);
     transform: translate(100%, 100%);
 }
 
@@ -316,6 +416,7 @@
    ----------------------------- */
 [class^='imghvr-hinge-'], [class*=' imghvr-hinge-'] {
     -webkit-perspective: 50em;
+    -moz-perspective: 50em;
     perspective: 50em;
 }
 
@@ -331,6 +432,7 @@
 [class^='imghvr-hinge-']:hover figcaption, [class*=' imghvr-hinge-']:hover figcaption {
     opacity: 1;
     -webkit-transition-delay: 0.21s;
+    -moz-transition-delay: 0.21s;
     transition-delay: 0.21s;
 }
 
@@ -338,23 +440,38 @@
    ----------------------------- */
 .imghvr-hinge-up img {
     -webkit-transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    -o-transform-origin: 50% 0%;
     transform-origin: 50% 0%;
 }
 
 .imghvr-hinge-up figcaption {
     -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
     transform: rotateX(90deg);
     -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
     transform-origin: 50% 100%;
 }
 
 .imghvr-hinge-up:hover > img {
     -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    -ms-transform: rotateX(-90deg);
+    -o-transform: rotateX(-90deg);
     transform: rotateX(-90deg);
 }
 
 .imghvr-hinge-up:hover figcaption {
     -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0);
     transform: rotateX(0);
 }
 
@@ -362,24 +479,39 @@
    ----------------------------- */
 .imghvr-hinge-down img {
     -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
     transform-origin: 50% 100%;
 }
 
 .imghvr-hinge-down figcaption {
     -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    -ms-transform: rotateX(-90deg);
+    -o-transform: rotateX(-90deg);
     transform: rotateX(-90deg);
     -webkit-transform-origin: 50% -50%;
+    -moz-transform-origin: 50% -50%;
+    -ms-transform-origin: 50% -50%;
+    -o-transform-origin: 50% -50%;
     transform-origin: 50% -50%;
 }
 
 .imghvr-hinge-down:hover > img {
     -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
     transform: rotateX(90deg);
     opacity: 0;
 }
 
 .imghvr-hinge-down:hover figcaption {
     -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0);
     transform: rotateX(0);
 }
 
@@ -387,23 +519,38 @@
    ----------------------------- */
 .imghvr-hinge-left img {
     -webkit-transform-origin: 0% 50%;
+    -moz-transform-origin: 0% 50%;
+    -ms-transform-origin: 0% 50%;
+    -o-transform-origin: 0% 50%;
     transform-origin: 0% 50%;
 }
 
 .imghvr-hinge-left figcaption {
     -webkit-transform: rotateY(-90deg);
+    -moz-transform: rotateY(-90deg);
+    -ms-transform: rotateY(-90deg);
+    -o-transform: rotateY(-90deg);
     transform: rotateY(-90deg);
     -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
     transform-origin: 100% 50%;
 }
 
 .imghvr-hinge-left:hover > img {
     -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
     transform: rotateY(90deg);
 }
 
 .imghvr-hinge-left:hover figcaption {
     -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
     transform: rotateY(0);
 }
 
@@ -411,23 +558,38 @@
    ----------------------------- */
 .imghvr-hinge-right img {
     -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
     transform-origin: 100% 50%;
 }
 
 .imghvr-hinge-right figcaption {
     -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
     transform: rotateY(90deg);
     -webkit-transform-origin: 0 50%;
+    -moz-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    -o-transform-origin: 0 50%;
     transform-origin: 0 50%;
 }
 
 .imghvr-hinge-right:hover > img {
     -webkit-transform: rotateY(-90deg);
+    -moz-transform: rotateY(-90deg);
+    -ms-transform: rotateY(-90deg);
+    -o-transform: rotateY(-90deg);
     transform: rotateY(-90deg);
 }
 
 .imghvr-hinge-right:hover figcaption {
     -webkit-transform: rotateY(0);
+    -moz-transform: rotateY(0);
+    -ms-transform: rotateY(0);
+    -o-transform: rotateY(0);
     transform: rotateY(0);
 }
 
@@ -435,6 +597,7 @@
    ----------------------------- */
 [class^='imghvr-flip-'], [class*=' imghvr-flip-'] {
     -webkit-perspective: 50em;
+    -moz-perspective: 50em;
     perspective: 50em;
 }
 
@@ -453,6 +616,7 @@
 [class^='imghvr-flip-']:hover figcaption, [class*=' imghvr-flip-']:hover figcaption {
     opacity: 1;
     -webkit-transition-delay: 0.14s;
+    -moz-transition-delay: 0.14s;
     transition-delay: 0.14s;
 }
 
@@ -460,18 +624,30 @@
    ----------------------------- */
 .imghvr-flip-horiz figcaption {
     -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
     transform: rotateX(90deg);
     -webkit-transform-origin: 0% 50%;
+    -moz-transform-origin: 0% 50%;
+    -ms-transform-origin: 0% 50%;
+    -o-transform-origin: 0% 50%;
     transform-origin: 0% 50%;
 }
 
 .imghvr-flip-horiz:hover img {
     -webkit-transform: rotateX(-180deg);
+    -moz-transform: rotateX(-180deg);
+    -ms-transform: rotateX(-180deg);
+    -o-transform: rotateX(-180deg);
     transform: rotateX(-180deg);
 }
 
 .imghvr-flip-horiz:hover figcaption {
     -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    -o-transform: rotateX(0deg);
     transform: rotateX(0deg);
 }
 
@@ -479,18 +655,30 @@
    ----------------------------- */
 .imghvr-flip-vert figcaption {
     -webkit-transform: rotateY(90deg);
+    -moz-transform: rotateY(90deg);
+    -ms-transform: rotateY(90deg);
+    -o-transform: rotateY(90deg);
     transform: rotateY(90deg);
     -webkit-transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    -o-transform-origin: 50% 0%;
     transform-origin: 50% 0%;
 }
 
 .imghvr-flip-vert:hover > img {
     -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
     transform: rotateY(-180deg);
 }
 
 .imghvr-flip-vert:hover figcaption {
     -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
     transform: rotateY(0deg);
 }
 
@@ -498,16 +686,25 @@
    ----------------------------- */
 .imghvr-flip-diag-1 figcaption {
     -webkit-transform: rotate3d(1, -1, 0, 100deg);
+    -moz-transform: rotate3d(1, -1, 0, 100deg);
+    -ms-transform: rotate3d(1, -1, 0, 100deg);
+    -o-transform: rotate3d(1, -1, 0, 100deg);
     transform: rotate3d(1, -1, 0, 100deg);
 }
 
 .imghvr-flip-diag-1:hover > img {
     -webkit-transform: rotate3d(-1, 1, 0, 100deg);
+    -moz-transform: rotate3d(-1, 1, 0, 100deg);
+    -ms-transform: rotate3d(-1, 1, 0, 100deg);
+    -o-transform: rotate3d(-1, 1, 0, 100deg);
     transform: rotate3d(-1, 1, 0, 100deg);
 }
 
 .imghvr-flip-diag-1:hover figcaption {
     -webkit-transform: rotate3d(0, 0, 0, 0deg);
+    -moz-transform: rotate3d(0, 0, 0, 0deg);
+    -ms-transform: rotate3d(0, 0, 0, 0deg);
+    -o-transform: rotate3d(0, 0, 0, 0deg);
     transform: rotate3d(0, 0, 0, 0deg);
 }
 
@@ -515,16 +712,25 @@
    ----------------------------- */
 .imghvr-flip-diag-2 figcaption {
     -webkit-transform: rotate3d(1, 1, 0, 100deg);
+    -moz-transform: rotate3d(1, 1, 0, 100deg);
+    -ms-transform: rotate3d(1, 1, 0, 100deg);
+    -o-transform: rotate3d(1, 1, 0, 100deg);
     transform: rotate3d(1, 1, 0, 100deg);
 }
 
 .imghvr-flip-diag-2:hover > img {
     -webkit-transform: rotate3d(-1, -1, 0, 100deg);
+    -moz-transform: rotate3d(-1, -1, 0, 100deg);
+    -ms-transform: rotate3d(-1, -1, 0, 100deg);
+    -o-transform: rotate3d(-1, -1, 0, 100deg);
     transform: rotate3d(-1, -1, 0, 100deg);
 }
 
 .imghvr-flip-diag-2:hover figcaption {
     -webkit-transform: rotate3d(0, 0, 0, 0deg);
+    -moz-transform: rotate3d(0, 0, 0, 0deg);
+    -ms-transform: rotate3d(0, 0, 0, 0deg);
+    -o-transform: rotate3d(0, 0, 0, 0deg);
     transform: rotate3d(0, 0, 0, 0deg);
 }
 
@@ -535,23 +741,27 @@
     position: absolute;
     content: '';
     -webkit-transition-delay: 0.105s;
+    -moz-transition-delay: 0.105s;
     transition-delay: 0.105s;
 }
 
 [class^='imghvr-shutter-out-'] figcaption, [class*=' imghvr-shutter-out-'] figcaption {
     opacity: 0;
     -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
     transition-delay: 0s;
 }
 
 [class^='imghvr-shutter-out-']:hover:before, [class*=' imghvr-shutter-out-']:hover:before {
     -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
     transition-delay: 0s;
 }
 
 [class^='imghvr-shutter-out-']:hover figcaption, [class*=' imghvr-shutter-out-']:hover figcaption {
     opacity: 1;
     -webkit-transition-delay: 0.105s;
+    -moz-transition-delay: 0.105s;
     transition-delay: 0.105s;
 }
 
@@ -591,6 +801,9 @@
     left: -35%;
     right: -35%;
     -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
@@ -607,6 +820,9 @@
     left: -35%;
     right: -35%;
     -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
 
@@ -641,6 +857,7 @@
 [class^='imghvr-shutter-in-']:hover figcaption, [class*=' imghvr-shutter-in-']:hover figcaption {
     opacity: 1;
     -webkit-transition-delay: 0.21s;
+    -moz-transition-delay: 0.21s;
     transition-delay: 0.21s;
 }
 
@@ -696,27 +913,40 @@
     width: 200%;
     height: 200%;
     -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
     transition: all 0.6s ease;
     opacity: 0.75;
 }
 
 .imghvr-shutter-in-out-diag-1:after {
     -webkit-transform: skew(-45deg) translateX(-150%);
+    -moz-transform: skew(-45deg) translateX(-150%);
+    -ms-transform: skew(-45deg) translateX(-150%);
+    -o-transform: skew(-45deg) translateX(-150%);
     transform: skew(-45deg) translateX(-150%);
 }
 
 .imghvr-shutter-in-out-diag-1:before {
     -webkit-transform: skew(-45deg) translateX(150%);
+    -moz-transform: skew(-45deg) translateX(150%);
+    -ms-transform: skew(-45deg) translateX(150%);
+    -o-transform: skew(-45deg) translateX(150%);
     transform: skew(-45deg) translateX(150%);
 }
 
 .imghvr-shutter-in-out-diag-1:hover:after {
     -webkit-transform: skew(-45deg) translateX(-50%);
+    -moz-transform: skew(-45deg) translateX(-50%);
+    -ms-transform: skew(-45deg) translateX(-50%);
+    -o-transform: skew(-45deg) translateX(-50%);
     transform: skew(-45deg) translateX(-50%);
 }
 
 .imghvr-shutter-in-out-diag-1:hover:before {
     -webkit-transform: skew(-45deg) translateX(50%);
+    -moz-transform: skew(-45deg) translateX(50%);
+    -ms-transform: skew(-45deg) translateX(50%);
+    -o-transform: skew(-45deg) translateX(50%);
     transform: skew(-45deg) translateX(50%);
 }
 
@@ -726,27 +956,40 @@
     width: 200%;
     height: 200%;
     -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
     transition: all 0.6s ease;
     opacity: 0.75;
 }
 
 .imghvr-shutter-in-out-diag-2:after {
     -webkit-transform: skew(45deg) translateX(-100%);
+    -moz-transform: skew(45deg) translateX(-100%);
+    -ms-transform: skew(45deg) translateX(-100%);
+    -o-transform: skew(45deg) translateX(-100%);
     transform: skew(45deg) translateX(-100%);
 }
 
 .imghvr-shutter-in-out-diag-2:before {
     -webkit-transform: skew(45deg) translateX(100%);
+    -moz-transform: skew(45deg) translateX(100%);
+    -ms-transform: skew(45deg) translateX(100%);
+    -o-transform: skew(45deg) translateX(100%);
     transform: skew(45deg) translateX(100%);
 }
 
 .imghvr-shutter-in-out-diag-2:hover:after {
     -webkit-transform: skew(45deg) translateX(0%);
+    -moz-transform: skew(45deg) translateX(0%);
+    -ms-transform: skew(45deg) translateX(0%);
+    -o-transform: skew(45deg) translateX(0%);
     transform: skew(45deg) translateX(0%);
 }
 
 .imghvr-shutter-in-out-diag-2:hover:before {
     -webkit-transform: skew(45deg) translateX(0%);
+    -moz-transform: skew(45deg) translateX(0%);
+    -ms-transform: skew(45deg) translateX(0%);
+    -o-transform: skew(45deg) translateX(0%);
     transform: skew(45deg) translateX(0%);
 }
 
@@ -754,11 +997,15 @@
    ----------------------------- */
 [class^='imghvr-fold'], [class*=' imghvr-fold'] {
     -webkit-perspective: 50em;
+    -moz-perspective: 50em;
     perspective: 50em;
 }
 
 [class^='imghvr-fold'] img, [class*=' imghvr-fold'] img {
     -webkit-transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    -o-transform-origin: 50% 0%;
     transform-origin: 50% 0%;
 }
 
@@ -770,14 +1017,19 @@
 [class^='imghvr-fold']:hover > img, [class*=' imghvr-fold']:hover > img {
     opacity: 0;
     -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
     transition-delay: 0;
 }
 
 [class^='imghvr-fold']:hover figcaption, [class*=' imghvr-fold']:hover figcaption {
     -webkit-transform: rotateX(0) translate3d(0, 0%, 0) scale(1);
+    -moz-transform: rotateX(0) translate3d(0, 0%, 0) scale(1);
+    -ms-transform: rotateX(0) translate3d(0, 0%, 0) scale(1);
+    -o-transform: rotateX(0) translate3d(0, 0%, 0) scale(1);
     transform: rotateX(0) translate3d(0, 0%, 0) scale(1);
     opacity: 1;
     -webkit-transition-delay: 0.21s;
+    -moz-transition-delay: 0.21s;
     transition-delay: 0.21s;
 }
 
@@ -785,18 +1037,30 @@
    ----------------------------- */
 .imghvr-fold-up > img {
     -webkit-transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    -o-transform-origin: 50% 0%;
     transform-origin: 50% 0%;
 }
 
 .imghvr-fold-up figcaption {
     -webkit-transform: rotateX(-90deg) translate3d(0%, -50%, 0) scale(0.6);
+    -moz-transform: rotateX(-90deg) translate3d(0%, -50%, 0) scale(0.6);
+    -ms-transform: rotateX(-90deg) translate3d(0%, -50%, 0) scale(0.6);
+    -o-transform: rotateX(-90deg) translate3d(0%, -50%, 0) scale(0.6);
     transform: rotateX(-90deg) translate3d(0%, -50%, 0) scale(0.6);
     -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
     transform-origin: 50% 100%;
 }
 
 .imghvr-fold-up:hover > img {
     -webkit-transform: rotateX(90deg) scale(0.6) translateY(50%);
+    -moz-transform: rotateX(90deg) scale(0.6) translateY(50%);
+    -ms-transform: rotateX(90deg) scale(0.6) translateY(50%);
+    -o-transform: rotateX(90deg) scale(0.6) translateY(50%);
     transform: rotateX(90deg) scale(0.6) translateY(50%);
 }
 
@@ -804,18 +1068,30 @@
    ----------------------------- */
 .imghvr-fold-down > img {
     -webkit-transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -ms-transform-origin: 50% 100%;
+    -o-transform-origin: 50% 100%;
     transform-origin: 50% 100%;
 }
 
 .imghvr-fold-down figcaption {
     -webkit-transform: rotateX(90deg) translate3d(0%, 50%, 0) scale(0.6);
+    -moz-transform: rotateX(90deg) translate3d(0%, 50%, 0) scale(0.6);
+    -ms-transform: rotateX(90deg) translate3d(0%, 50%, 0) scale(0.6);
+    -o-transform: rotateX(90deg) translate3d(0%, 50%, 0) scale(0.6);
     transform: rotateX(90deg) translate3d(0%, 50%, 0) scale(0.6);
     -webkit-transform-origin: 50% 0%;
+    -moz-transform-origin: 50% 0%;
+    -ms-transform-origin: 50% 0%;
+    -o-transform-origin: 50% 0%;
     transform-origin: 50% 0%;
 }
 
 .imghvr-fold-down:hover > img {
     -webkit-transform: rotateX(-90deg) scale(0.6) translateY(-50%);
+    -moz-transform: rotateX(-90deg) scale(0.6) translateY(-50%);
+    -ms-transform: rotateX(-90deg) scale(0.6) translateY(-50%);
+    -o-transform: rotateX(-90deg) scale(0.6) translateY(-50%);
     transform: rotateX(-90deg) scale(0.6) translateY(-50%);
 }
 
@@ -823,18 +1099,30 @@
    ----------------------------- */
 .imghvr-fold-left > img {
     -webkit-transform-origin: 0% 50%;
+    -moz-transform-origin: 0% 50%;
+    -ms-transform-origin: 0% 50%;
+    -o-transform-origin: 0% 50%;
     transform-origin: 0% 50%;
 }
 
 .imghvr-fold-left figcaption {
     -webkit-transform: rotateY(90deg) translate3d(-50%, 0%, 0) scale(0.6);
+    -moz-transform: rotateY(90deg) translate3d(-50%, 0%, 0) scale(0.6);
+    -ms-transform: rotateY(90deg) translate3d(-50%, 0%, 0) scale(0.6);
+    -o-transform: rotateY(90deg) translate3d(-50%, 0%, 0) scale(0.6);
     transform: rotateY(90deg) translate3d(-50%, 0%, 0) scale(0.6);
     -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
     transform-origin: 100% 50%;
 }
 
 .imghvr-fold-left:hover > img {
     -webkit-transform: rotateY(-90deg) scale(0.6) translateX(50%);
+    -moz-transform: rotateY(-90deg) scale(0.6) translateX(50%);
+    -ms-transform: rotateY(-90deg) scale(0.6) translateX(50%);
+    -o-transform: rotateY(-90deg) scale(0.6) translateX(50%);
     transform: rotateY(-90deg) scale(0.6) translateX(50%);
 }
 
@@ -842,18 +1130,30 @@
    ----------------------------- */
 .imghvr-fold-right > img {
     -webkit-transform-origin: 100% 50%;
+    -moz-transform-origin: 100% 50%;
+    -ms-transform-origin: 100% 50%;
+    -o-transform-origin: 100% 50%;
     transform-origin: 100% 50%;
 }
 
 .imghvr-fold-right figcaption {
     -webkit-transform: rotateY(-90deg) translate3d(50%, 0%, 0) scale(0.6);
+    -moz-transform: rotateY(-90deg) translate3d(50%, 0%, 0) scale(0.6);
+    -ms-transform: rotateY(-90deg) translate3d(50%, 0%, 0) scale(0.6);
+    -o-transform: rotateY(-90deg) translate3d(50%, 0%, 0) scale(0.6);
     transform: rotateY(-90deg) translate3d(50%, 0%, 0) scale(0.6);
     -webkit-transform-origin: 0 50%;
+    -moz-transform-origin: 0 50%;
+    -ms-transform-origin: 0 50%;
+    -o-transform-origin: 0 50%;
     transform-origin: 0 50%;
 }
 
 .imghvr-fold-right:hover > img {
     -webkit-transform: rotateY(90deg) scale(0.6) translateX(-50%);
+    -moz-transform: rotateY(90deg) scale(0.6) translateX(-50%);
+    -ms-transform: rotateY(90deg) scale(0.6) translateX(-50%);
+    -o-transform: rotateY(90deg) scale(0.6) translateX(-50%);
     transform: rotateY(90deg) scale(0.6) translateX(-50%);
 }
 
@@ -862,11 +1162,17 @@
 .imghvr-zoom-in figcaption {
     opacity: 0;
     -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
     transform: scale(0.5);
 }
 
 .imghvr-zoom-in:hover figcaption {
     -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
     transform: scale(1);
     opacity: 1;
 }
@@ -875,17 +1181,27 @@
    ----------------------------- */
 [class^='imghvr-zoom-out'] figcaption, [class*=' imghvr-zoom-out'] figcaption {
     -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
     transform: scale(0.5);
     -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    -o-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
     opacity: 0;
 }
 
 [class^='imghvr-zoom-out']:hover figcaption, [class^='imghvr-zoom-out'].hover figcaption, [class*=' imghvr-zoom-out']:hover figcaption, [class*=' imghvr-zoom-out'].hover figcaption {
     -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
     transform: scale(1);
     opacity: 1;
     -webkit-transition-delay: 0.35s;
+    -moz-transition-delay: 0.35s;
     transition-delay: 0.35s;
 }
 
@@ -893,6 +1209,9 @@
    ----------------------------- */
 .imghvr-zoom-out:hover > img {
     -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    -o-transform: scale(0.5);
     transform: scale(0.5);
     opacity: 0;
 }
@@ -901,21 +1220,30 @@
    ----------------------------- */
 .imghvr-zoom-out-up:hover > img, .imghvr-zoom-out-up.hover > img {
     -webkit-animation: imghvr-zoom-out-up 0.4025s linear;
+    -moz-animation: imghvr-zoom-out-up 0.4025s linear;
     animation: imghvr-zoom-out-up 0.4025s linear;
     -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
     animation-iteration-count: 1;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes imghvr-zoom-out-up {
     50% {
         -webkit-transform: scale(0.8) translateY(0%);
+        -moz-transform: scale(0.8) translateY(0%);
+        -ms-transform: scale(0.8) translateY(0%);
+        -o-transform: scale(0.8) translateY(0%);
         transform: scale(0.8) translateY(0%);
         opacity: 0.5;
     }
     100% {
         -webkit-transform: scale(0.8) translateY(-150%);
+        -moz-transform: scale(0.8) translateY(-150%);
+        -ms-transform: scale(0.8) translateY(-150%);
+        -o-transform: scale(0.8) translateY(-150%);
         transform: scale(0.8) translateY(-150%);
         opacity: 0.5;
     }
@@ -924,11 +1252,17 @@
 @keyframes imghvr-zoom-out-up {
     50% {
         -webkit-transform: scale(0.8) translateY(0%);
+        -moz-transform: scale(0.8) translateY(0%);
+        -ms-transform: scale(0.8) translateY(0%);
+        -o-transform: scale(0.8) translateY(0%);
         transform: scale(0.8) translateY(0%);
         opacity: 0.5;
     }
     100% {
         -webkit-transform: scale(0.8) translateY(-150%);
+        -moz-transform: scale(0.8) translateY(-150%);
+        -ms-transform: scale(0.8) translateY(-150%);
+        -o-transform: scale(0.8) translateY(-150%);
         transform: scale(0.8) translateY(-150%);
         opacity: 0.5;
     }
@@ -938,21 +1272,30 @@
    ----------------------------- */
 .imghvr-zoom-out-down:hover > img, .imghvr-zoom-out-down.hover > img {
     -webkit-animation: imghvr-zoom-out-down 0.4025s linear;
+    -moz-animation: imghvr-zoom-out-down 0.4025s linear;
     animation: imghvr-zoom-out-down 0.4025s linear;
     -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
     animation-iteration-count: 1;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes imghvr-zoom-out-down {
     50% {
         -webkit-transform: scale(0.8) translateY(0%);
+        -moz-transform: scale(0.8) translateY(0%);
+        -ms-transform: scale(0.8) translateY(0%);
+        -o-transform: scale(0.8) translateY(0%);
         transform: scale(0.8) translateY(0%);
         opacity: 0.5;
     }
     100% {
         -webkit-transform: scale(0.8) translateY(150%);
+        -moz-transform: scale(0.8) translateY(150%);
+        -ms-transform: scale(0.8) translateY(150%);
+        -o-transform: scale(0.8) translateY(150%);
         transform: scale(0.8) translateY(150%);
         opacity: 0.5;
     }
@@ -961,11 +1304,17 @@
 @keyframes imghvr-zoom-out-down {
     50% {
         -webkit-transform: scale(0.8) translateY(0%);
+        -moz-transform: scale(0.8) translateY(0%);
+        -ms-transform: scale(0.8) translateY(0%);
+        -o-transform: scale(0.8) translateY(0%);
         transform: scale(0.8) translateY(0%);
         opacity: 0.5;
     }
     100% {
         -webkit-transform: scale(0.8) translateY(150%);
+        -moz-transform: scale(0.8) translateY(150%);
+        -ms-transform: scale(0.8) translateY(150%);
+        -o-transform: scale(0.8) translateY(150%);
         transform: scale(0.8) translateY(150%);
         opacity: 0.5;
     }
@@ -975,21 +1324,30 @@
    ----------------------------- */
 .imghvr-zoom-out-left:hover > img, .imghvr-zoom-out-left.hover > img {
     -webkit-animation: imghvr-zoom-out-left 0.4025s linear;
+    -moz-animation: imghvr-zoom-out-left 0.4025s linear;
     animation: imghvr-zoom-out-left 0.4025s linear;
     -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
     animation-iteration-count: 1;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes imghvr-zoom-out-left {
     50% {
         -webkit-transform: scale(0.8) translateX(0%);
+        -moz-transform: scale(0.8) translateX(0%);
+        -ms-transform: scale(0.8) translateX(0%);
+        -o-transform: scale(0.8) translateX(0%);
         transform: scale(0.8) translateX(0%);
         opacity: 0.5;
     }
     100% {
         -webkit-transform: scale(0.8) translateX(-150%);
+        -moz-transform: scale(0.8) translateX(-150%);
+        -ms-transform: scale(0.8) translateX(-150%);
+        -o-transform: scale(0.8) translateX(-150%);
         transform: scale(0.8) translateX(-150%);
         opacity: 0.5;
     }
@@ -998,11 +1356,17 @@
 @keyframes imghvr-zoom-out-left {
     50% {
         -webkit-transform: scale(0.8) translateX(0%);
+        -moz-transform: scale(0.8) translateX(0%);
+        -ms-transform: scale(0.8) translateX(0%);
+        -o-transform: scale(0.8) translateX(0%);
         transform: scale(0.8) translateX(0%);
         opacity: 0.5;
     }
     100% {
         -webkit-transform: scale(0.8) translateX(-150%);
+        -moz-transform: scale(0.8) translateX(-150%);
+        -ms-transform: scale(0.8) translateX(-150%);
+        -o-transform: scale(0.8) translateX(-150%);
         transform: scale(0.8) translateX(-150%);
         opacity: 0.5;
     }
@@ -1012,21 +1376,30 @@
    ----------------------------- */
 .imghvr-zoom-out-right:hover > img, .imghvr-zoom-out-right.hover > img {
     -webkit-animation: imghvr-zoom-out-right 0.4025s linear;
+    -moz-animation: imghvr-zoom-out-right 0.4025s linear;
     animation: imghvr-zoom-out-right 0.4025s linear;
     -webkit-animation-iteration-count: 1;
+    -moz-animation-iteration-count: 1;
     animation-iteration-count: 1;
     -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes imghvr-zoom-out-right {
     50% {
         -webkit-transform: scale(0.8) translateX(0%);
+        -moz-transform: scale(0.8) translateX(0%);
+        -ms-transform: scale(0.8) translateX(0%);
+        -o-transform: scale(0.8) translateX(0%);
         transform: scale(0.8) translateX(0%);
         opacity: 0.5;
     }
     100% {
         -webkit-transform: scale(0.8) translateX(150%);
+        -moz-transform: scale(0.8) translateX(150%);
+        -ms-transform: scale(0.8) translateX(150%);
+        -o-transform: scale(0.8) translateX(150%);
         transform: scale(0.8) translateX(150%);
         opacity: 0.5;
     }
@@ -1035,11 +1408,17 @@
 @keyframes imghvr-zoom-out-right {
     50% {
         -webkit-transform: scale(0.8) translateX(0%);
+        -moz-transform: scale(0.8) translateX(0%);
+        -ms-transform: scale(0.8) translateX(0%);
+        -o-transform: scale(0.8) translateX(0%);
         transform: scale(0.8) translateX(0%);
         opacity: 0.5;
     }
     100% {
         -webkit-transform: scale(0.8) translateX(150%);
+        -moz-transform: scale(0.8) translateX(150%);
+        -ms-transform: scale(0.8) translateX(150%);
+        -o-transform: scale(0.8) translateX(150%);
         transform: scale(0.8) translateX(150%);
         opacity: 0.5;
     }
@@ -1049,28 +1428,40 @@
    ----------------------------- */
 .imghvr-zoom-out-flip-horiz {
     -webkit-perspective: 50em;
+    -moz-perspective: 50em;
     perspective: 50em;
 }
 
 .imghvr-zoom-out-flip-horiz figcaption {
     opacity: 0;
     -webkit-transform: rotateX(90deg) translateY(-100%) scale(0.5);
+    -moz-transform: rotateX(90deg) translateY(-100%) scale(0.5);
+    -ms-transform: rotateX(90deg) translateY(-100%) scale(0.5);
+    -o-transform: rotateX(90deg) translateY(-100%) scale(0.5);
     transform: rotateX(90deg) translateY(-100%) scale(0.5);
 }
 
 .imghvr-zoom-out-flip-horiz:hover > img, .imghvr-zoom-out-flip-horiz.hover > img {
     -webkit-transform: rotateX(-100deg) translateY(50%) scale(0.5);
+    -moz-transform: rotateX(-100deg) translateY(50%) scale(0.5);
+    -ms-transform: rotateX(-100deg) translateY(50%) scale(0.5);
+    -o-transform: rotateX(-100deg) translateY(50%) scale(0.5);
     transform: rotateX(-100deg) translateY(50%) scale(0.5);
     opacity: 0;
     -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
     transition-delay: 0;
 }
 
 .imghvr-zoom-out-flip-horiz:hover figcaption, .imghvr-zoom-out-flip-horiz.hover figcaption {
     -webkit-transform: rotateX(0) translateY(0%) scale(1);
+    -moz-transform: rotateX(0) translateY(0%) scale(1);
+    -ms-transform: rotateX(0) translateY(0%) scale(1);
+    -o-transform: rotateX(0) translateY(0%) scale(1);
     transform: rotateX(0) translateY(0%) scale(1);
     opacity: 1;
     -webkit-transition-delay: 0.35s;
+    -moz-transition-delay: 0.35s;
     transition-delay: 0.35s;
 }
 
@@ -1078,28 +1469,40 @@
    ----------------------------- */
 .imghvr-zoom-out-flip-vert {
     -webkit-perspective: 50em;
+    -moz-perspective: 50em;
     perspective: 50em;
 }
 
 .imghvr-zoom-out-flip-vert figcaption {
     opacity: 0;
     -webkit-transform: rotateY(90deg) translate(50%, 0) scale(0.5);
+    -moz-transform: rotateY(90deg) translate(50%, 0) scale(0.5);
+    -ms-transform: rotateY(90deg) translate(50%, 0) scale(0.5);
+    -o-transform: rotateY(90deg) translate(50%, 0) scale(0.5);
     transform: rotateY(90deg) translate(50%, 0) scale(0.5);
 }
 
 .imghvr-zoom-out-flip-vert:hover > img, .imghvr-zoom-out-flip-vert.hover > img {
     -webkit-transform: rotateY(-100deg) translateX(50%) scale(0.5);
+    -moz-transform: rotateY(-100deg) translateX(50%) scale(0.5);
+    -ms-transform: rotateY(-100deg) translateX(50%) scale(0.5);
+    -o-transform: rotateY(-100deg) translateX(50%) scale(0.5);
     transform: rotateY(-100deg) translateX(50%) scale(0.5);
     opacity: 0;
     -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
     transition-delay: 0;
 }
 
 .imghvr-zoom-out-flip-vert:hover figcaption, .imghvr-zoom-out-flip-vert.hover figcaption {
     -webkit-transform: rotateY(0) translate(0, 0) scale(1);
+    -moz-transform: rotateY(0) translate(0, 0) scale(1);
+    -ms-transform: rotateY(0) translate(0, 0) scale(1);
+    -o-transform: rotateY(0) translate(0, 0) scale(1);
     transform: rotateY(0) translate(0, 0) scale(1);
     opacity: 1;
     -webkit-transition-delay: 0.35s;
+    -moz-transition-delay: 0.35s;
     transition-delay: 0.35s;
 }
 
@@ -1113,6 +1516,9 @@
     -webkit-filter: blur(30px);
     filter: blur(30px);
     -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
     transform: scale(1.2);
     opacity: 0;
 }
@@ -1120,6 +1526,7 @@
 .imghvr-blur:hover figcaption {
     opacity: 1;
     -webkit-transition-delay: 0.21s;
+    -moz-transition-delay: 0.21s;
     transition-delay: 0.21s;
 }
 
