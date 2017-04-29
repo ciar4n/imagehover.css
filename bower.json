@@ -1,0 +1,17 @@
+{
+  "name": "imagehover.css",
+  "homepage": "https://github.com/ciar4n/imagehover.css",
+  "authors": [
+    "Ciaran Walsh"
+  ],
+  "description": "",
+  "main": "css/imagehover.css",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
