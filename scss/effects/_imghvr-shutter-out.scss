@@ -5,19 +5,19 @@
 		background: $figcaption-bg;
 		position: absolute;
 		content: ''; 
-		@include transition-delay($transition-duration * 0.3);
+		transition-delay: $transition-duration * 0.3;
 	}
 	figcaption {
 		opacity: 0;
-		@include transition-delay(0s);
+		transition-delay: 0s;
 	}
 	&:hover {
 		&:before {
-			@include transition-delay(0s);
+			transition-delay: 0s;
 		}
 		figcaption {
 			opacity: 1;
-			@include transition-delay($transition-duration * 0.3);
+			transition-delay: $transition-duration * 0.3;
 		}
 	}
 }
@@ -61,7 +61,7 @@
 		bottom: 50%;
 		left: -35%;
 		right: -35%;
-		@include transform(rotate(45deg));
+		transform: rotate(45deg);
 	}
 	&:hover {
 		&:before {
@@ -78,7 +78,7 @@
 		bottom: 50%;
 		left: -35%;
 		right: -35%;
-		@include transform(rotate(-45deg));
+		transform: rotate(-45deg);
 	}
 	&:hover {
 		&:before {

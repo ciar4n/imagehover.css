@@ -3,7 +3,7 @@
 [class^='imghvr-slide-'], [class*=' imghvr-slide-'] {
 	&:hover {
 		figcaption {
-			@include transform(translate(0,0));
+			transform: translate(0,0);
 		}
 	}
 }
@@ -11,55 +11,55 @@
    ----------------------------- */
 .imghvr-slide-up {
 	figcaption {
-		@include transform(translateY(100%));
+		transform: translateY(100%);
 	}
 }
  /* imghvr-slide-down
    ----------------------------- */
 .imghvr-slide-down {
 	figcaption {
-		@include transform(translateY(-100%));
+		transform: translateY(-100%);
 	}
 }
  /* imghvr-slide-left
    ----------------------------- */
 .imghvr-slide-left {
 	figcaption {
-		@include transform(translateX(100%));
+		transform: translateX(100%);
 	}
 }
  /* imghvr-slide-right
    ----------------------------- */
 .imghvr-slide-right {
 	figcaption {
-		@include transform(translateX(-100%));
+		transform: translateX(-100%);
 	}
 }
  /* imghvr-slide-top-left
    ----------------------------- */
 .imghvr-slide-top-left {
 	figcaption {
-		@include transform(translate(-100%,-100%));
+		transform: translate(-100%,-100%);
 	}
 }
  /* imghvr-slide-top-right
    ----------------------------- */
 .imghvr-slide-top-right {
 	figcaption {
-		@include transform(translate(100%,-100%));
+		transform: translate(100%,-100%);
 	}
 }
  /* imghvr-slide-bottom-left
    ----------------------------- */
 .imghvr-slide-bottom-left {
 	figcaption {
-		@include transform(translate(-100%,100%));
+		transform: translate(-100%,100%);
 	}
 }
  /* imghvr-slide-bottom-right
    ----------------------------- */
 .imghvr-slide-bottom-right {
 	figcaption {
-		@include transform(translate(100%,100%));
+		transform: translate(100%,100%);
 	}
 }

@@ -1,7 +1,7 @@
  /* imghvr-flip-*
    ----------------------------- */
 [class^='imghvr-flip-'], [class*=' imghvr-flip-'] {
-	@include perspective(50em);
+	perspective: 50em;
 	img {
 		backface-visibility: hidden;
 	}
@@ -14,7 +14,7 @@
 		}
 		figcaption {
 			opacity: 1;
-			@include transition-delay($transition-duration * 0.4);
+			transition-delay: $transition-duration * 0.4;
 		}
 	}
 }
@@ -22,15 +22,15 @@
    ----------------------------- */
 .imghvr-flip-horiz {
 	figcaption {
-		@include transform(rotateX(90deg));
-		@include transform-origin(0% 50%);
+		transform: rotateX(90deg);
+		transform-origin: 0% 50%;
 	}
 	&:hover {
 		img {
-			@include transform(rotateX(-180deg));
+			transform: rotateX(-180deg);
 		}
 		figcaption {
-			@include transform(rotateX(0deg));
+			transform: rotateX(0deg);
 		}
 	}
 }
@@ -38,15 +38,15 @@
    ----------------------------- */
 .imghvr-flip-vert {
 	figcaption {
-		@include transform(rotateY(90deg));
-		@include transform-origin(50% 0%);
+		transform: rotateY(90deg);
+		transform-origin: 50% 0%;
 	}
 	&:hover {
 		> img {
-			@include transform(rotateY(-180deg));
+			transform: rotateY(-180deg);
 		}
 		figcaption {
-			@include transform(rotateY(0deg));
+			transform: rotateY(0deg);
 		}
 	}
 }
@@ -54,14 +54,14 @@
    ----------------------------- */
 .imghvr-flip-diag-1 {
 	figcaption {
-		@include transform(rotate3d(1,-1,0,100deg));
+		transform: rotate3d(1,-1,0,100deg);
 	}
 	&:hover {
 		> img {
-			@include transform(rotate3d(-1,1,0,100deg));
+			transform: rotate3d(-1,1,0,100deg);
 		}
 		figcaption {
-			@include transform(rotate3d(0,0,0,0deg));
+			transform: rotate3d(0,0,0,0deg);
 		}
 	}
 }
@@ -69,14 +69,14 @@
    ----------------------------- */
 .imghvr-flip-diag-2 {
 	figcaption {
-		@include transform(rotate3d(1,1,0,100deg));
+		transform: rotate3d(1,1,0,100deg);
 	}
 	&:hover {
 		> img {
-			@include transform(rotate3d(-1,-1,0,100deg));
+			transform: rotate3d(-1,-1,0,100deg);
 		}
 		figcaption {
-			@include transform(rotate3d(0,0,0,0deg));
+			transform: rotate3d(0,0,0,0deg);
 		}
 	}
 }

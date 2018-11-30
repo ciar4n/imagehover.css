@@ -36,7 +36,7 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
-  @include transform(translateZ(0));
+  transform: translateZ(0);
   > img {
     vertical-align: top;
     max-width: 100%;
@@ -61,7 +61,7 @@
 [class^='imghvr-'] *, [class*=' imghvr-'] *, [class^='imghvr-'] *:before,
 [class^='imghvr-'] *:after, [class*=' imghvr-'] *:before, [class*=' imghvr-'] *:after {
   box-sizing: border-box;
-  @include transition (all 0.35s ease);
+  transition: all .35s ease;
 }
 
 @import "effects/_imghvr-fade";

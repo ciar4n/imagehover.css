@@ -3,18 +3,21 @@
  */
 const gulp = require('gulp');
 const cssnano = require('gulp-cssnano');
-const notify = require("gulp-notify");
+const notify = require('gulp-notify');
 const plumber = require('gulp-plumber');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
+const autoprefixer = require('autoprefixer');
+const postcss = require('gulp-postcss');
+const clean = require('gulp-clean');
 
 /**
  * Custom error function for Plumber.
  *
  * @param err
  */
-let onError = function(err) {
+let onError = function (err) {
     notify.onError({
         title:    "Error",
         message:  "<%= error %>",
@@ -36,26 +39,17 @@ const plumberOptions = {
  *
  * Build and minify styles for production/distributed use.
  */
-gulp.task('minify', function () {
-    gulp.src('scss/imagehover.scss')
-        .pipe(sourcemaps.init())
-        .pipe(sass({
-            errLogToConsole: true,
-        }).on('error', sass.logError))
-        .pipe(rename('imagehover.min.css'))
-        .pipe(cssnano({
-            safe: true,
-            autoprefixer: false,
-            convertValues: false,
-        }))
-        .pipe(sourcemaps.write('/'))
-        .pipe(gulp.dest('css'));
+gulp.task('minify', () => {
+    return gulp.src('./css/imagehover.css')
+        .pipe(cssnano())
+		.pipe(rename('imagehover.min.css'))
+        .pipe(gulp.dest('./css'));
 });
 
 /**
  * Build task
  */
-gulp.task('build', function () {
+gulp.task('build', () => {
     gulp.src('scss/imagehover.scss')
         .pipe(plumber(plumberOptions))
         .pipe(sourcemaps.init())
@@ -68,9 +62,28 @@ gulp.task('build', function () {
 });
 
 /**
+ * Clean dist directory
+ */
+gulp.task('clean', () => {
+    return gulp.src('./css/imagehover*.css*', {read: false})
+        .pipe(clean({force: true}));
+});
+
+/**
+ * Auto prefix CSS
+ */
+gulp.task('autoprefixer', () => {
+    return gulp.src('./css/imagehover.css')
+        .pipe(sourcemaps.init())
+        .pipe(postcss([ autoprefixer({browsers: ['last 1 version']}) ]))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest('./css/'));
+});
+
+/**
  * Gulp watch task
  */
-gulp.task('watch', function () {
+gulp.task('watch', () => {
     // Watch SCSS files for changes
     gulp.watch(
         ['scss/*.scss'],
@@ -84,4 +97,4 @@ gulp.task('watch', function () {
  * Build then watch SCSS files.
  *
  */
-gulp.task('default', ['build', 'watch']);
+gulp.task('default', ['clean', 'build', 'autoprefixer', 'minify']);
