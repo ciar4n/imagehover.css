@@ -21,7 +21,7 @@
 	&:hover {
 		figcaption {
 			opacity: 1;
-			@include transition-delay($transition-duration * 0.6);
+			transition-delay: $transition-duration * 0.6;
 		}
 	}
 }
@@ -85,21 +85,21 @@
 	&:after, &:before {
 		width: 200%;
 		height: 200%;
-		@include transition (all 0.6s ease);
+		transition: all 0.6s ease;
 		opacity: 0.75;
 	}
 	&:after {
-		@include transform(skew(-45deg) translateX(-150%));
+		transform: skew(-45deg) translateX(-150%);
 	}
 	&:before {
-		@include transform(skew(-45deg) translateX(150%));
+		transform: skew(-45deg) translateX(150%);
 	}
 	&:hover {
 		&:after {
-			@include transform(skew(-45deg) translateX(-50%));
+			transform: skew(-45deg) translateX(-50%);
 		}
 		&:before {
-			@include transform(skew(-45deg) translateX(50%));
+			transform: skew(-45deg) translateX(50%);
 		} 
 	}
 }
@@ -109,21 +109,21 @@
 	&:after, &:before {
 		width: 200%;
 		height: 200%;
-		@include transition(all 0.6s ease);
+		transition: all 0.6s ease;
 		opacity: 0.75;
 	}
 	&:after {
-		@include transform(skew(45deg) translateX(-100%));
+		transform: skew(45deg) translateX(-100%);
 	}
 	&:before {
-		@include transform(skew(45deg) translateX(100%));
+		transform: skew(45deg) translateX(100%);
 	}
 	&:hover {
 		&:after {
-			@include transform(skew(45deg) translateX(0%));
+			transform: skew(45deg) translateX(0%);
 		}
 		&:before {
-			@include transform(skew(45deg) translateX(0%));
+			transform: skew(45deg) translateX(0%);
 		} 
 	}
 }

@@ -11,11 +11,11 @@
 	}
 	&:hover {
 		&:before {
-			@include transform(translate(0,0));
+			transform: translate(0,0);
 		}
 		figcaption {
 			opacity: 1;
-			@include transition-delay($transition-duration * 0.6);
+			transition-delay: $transition-duration * 0.6;
 		}
 	}
 }
@@ -23,28 +23,28 @@
    ----------------------------- */
 .imghvr-reveal-up {
 	&:before {
-		@include transform(translateY(100%));
+		transform: translateY(100%);
 	}
 }
  /* imghvr-reveal-down
    ----------------------------- */
 .imghvr-reveal-down {
 	&:before {
-		@include transform(translateY(-100%));
+		transform: translateY(-100%);
 	}
 }
  /* imghvr-reveal-left
    ----------------------------- */
 .imghvr-reveal-left {
 	&:before {
-		@include transform(translateX(100%));
+		transform: translateX(100%);
 	}
 }
  /* imghvr-reveal-right
    ----------------------------- */
 .imghvr-reveal-right {
 	&:before {
-		@include transform(translateX(-100%));
+		transform: translateX(-100%);
 	}
 }
 
@@ -52,27 +52,27 @@
    ----------------------------- */
 .imghvr-reveal-top-left {
 	&:before {
-		@include transform(translate(-100%,-100%));
+		transform: translate(-100%,-100%);
 	}
 }
  /* imghvr-reveal-top-right
    ----------------------------- */
 .imghvr-reveal-top-right {
 	&:before {
-		@include transform(translate(100%,-100%));
+		transform: translate(100%,-100%);
 	}
 }
  /* imghvr-reveal-bottom-left
    ----------------------------- */
 .imghvr-reveal-bottom-left {
 	&:before {
-		@include transform(translate(-100%,100%));
+		transform: translate(-100%,100%);
 	}
 }
  /* imghvr-reveal-bottom-right
    ----------------------------- */
 .imghvr-reveal-bottom-right {
 	&:before {
-		@include transform(translate(100%,100%));
+		transform: translate(100%,100%);
 	}
 }

@@ -6,13 +6,13 @@
 	}
 	&:hover {
 		> img {
-			@include filter(blur(30px));
-			@include transform(scale(1.2));
+			filter: blur(30px);
+			transform: scale(1.2);
 			opacity: 0;
 		}
 		figcaption {
 			opacity: 1;
-			@include transition-delay($transition-duration * 0.6);
+			transition-delay: $transition-duration * 0.6;
 		}
 	}
 }

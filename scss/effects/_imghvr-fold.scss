@@ -1,9 +1,9 @@
  /* imghvr-fold*
    ----------------------------- */
 [class^='imghvr-fold'], [class*=' imghvr-fold'] {
-	@include perspective(50em);
+	perspective: 50em;
 	img {
-		@include transform-origin(50% 0%);
+		transform-origin: 50% 0%;
 	}
 	figcaption {
 		z-index: 1;
@@ -12,12 +12,12 @@
 	&:hover {
 		> img {
 			opacity: 0;
-			@include transition-delay(0);
+			transition-delay: 0;
 		}
 		figcaption {
-			@include transform(rotateX(0) translate3d(0,0%,0) scale(1));
+			transform: rotateX(0) translate3d(0,0%,0) scale(1);
 			opacity: 1;
-			@include transition-delay($transition-duration * 0.6);
+			transition-delay: $transition-duration * 0.6;
 		}
 	}
 }
@@ -25,15 +25,15 @@
    ----------------------------- */
 .imghvr-fold-up {
 	> img {
-		@include transform-origin(50% 0%);
+		transform-origin: 50% 0%;
 	}
 	figcaption {
-		@include transform(rotateX(-90deg) translate3d(0%,-50%,0) scale(0.6));
-		@include transform-origin(50% 100%);
+		transform: rotateX(-90deg) translate3d(0%,-50%,0) scale(0.6);
+		transform-origin: 50% 100%;
 	}
 	&:hover {
 		> img {
-			@include transform(rotateX(90deg) scale(0.6) translateY(50%));
+			transform: rotateX(90deg) scale(0.6) translateY(50%);
 		}
 	}
 }
@@ -41,15 +41,15 @@
    ----------------------------- */
 .imghvr-fold-down {
 	> img {
-		@include transform-origin(50% 100%);
+		transform-origin: 50% 100%;
 	}
 	figcaption {
-		@include transform(rotateX(90deg) translate3d(0%,50%,0) scale(0.6));
-		@include transform-origin(50% 0%);
+		transform: rotateX(90deg) translate3d(0%,50%,0) scale(0.6);
+		transform-origin: 50% 0%;
 	}
 	&:hover {
 		> img {
-			@include transform(rotateX(-90deg) scale(0.6) translateY(-50%));
+			transform: rotateX(-90deg) scale(0.6) translateY(-50%);
 		}
 	}
 }
@@ -57,15 +57,15 @@
    ----------------------------- */
 .imghvr-fold-left {
 	> img {
-		@include transform-origin(0% 50%);
+		transform-origin: 0% 50%;
 	}
 	figcaption {
-		@include transform(rotateY(90deg) translate3d(-50%,0%,0) scale(0.6));
-		@include transform-origin(100% 50%);
+		transform: rotateY(90deg) translate3d(-50%,0%,0) scale(0.6);
+		transform-origin: 100% 50%;
 	}
 	&:hover {
 		> img {
-			@include transform(rotateY(-90deg) scale(0.6) translateX(50%));
+			transform: rotateY(-90deg) scale(0.6) translateX(50%);
 		}
 	}
 }
@@ -73,15 +73,15 @@
    ----------------------------- */
 .imghvr-fold-right {
 	> img {
-		@include transform-origin(100% 50%);
+		transform-origin: 100% 50%;
 	}
 	figcaption {
-		@include transform(rotateY(-90deg) translate3d(50%,0%,0) scale(0.6));
-		@include transform-origin(0 50%);
+		transform: rotateY(-90deg) translate3d(50%,0%,0) scale(0.6);
+		transform-origin: 0 50%;
 	}
 	&:hover {
 		> img {
-			@include transform(rotateY(90deg) scale(0.6) translateX(-50%));
+			transform: rotateY(90deg) scale(0.6) translateX(-50%);
 		}
 	}
 }

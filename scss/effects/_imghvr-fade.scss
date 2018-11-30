@@ -12,7 +12,7 @@
 			opacity: 1;
 		}
 		> img, figcaption {
-			@include transform(translate(0, 0));
+			transform: translate(0, 0);
 		}
 	}
 }
@@ -26,27 +26,27 @@
    ----------------------------- */
 .imghvr-fade-in-up {
 	figcaption {
-		@include transform(translate(0, 15%));
+		transform: translate(0, 15%);
 	}
 }
  /* imghvr-fade-in-down
    ----------------------------- */
 .imghvr-fade-in-down {
 	figcaption {
-		@include transform(translate(0, -15%));
+		transform: translate(0, -15%);
 	}
 }
  /* imghvr-fade-in-left
    ----------------------------- */
 .imghvr-fade-in-left {
 	figcaption {
-		@include transform(translate(-15%, 0));
+		transform: translate(-15%, 0);
 	}
 }
  /* imghvr-fade-in-right
    ----------------------------- */
 .imghvr-fade-in-right {
 	figcaption {
-		@include transform(translate(15%, 0));
+		transform: translate(15%, 0);
 	}
 }

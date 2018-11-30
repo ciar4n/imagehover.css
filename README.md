@@ -5,10 +5,10 @@ Imagehover.css is a lovingly crafted CSS library allowing you to easily implemen
 
 [Check out all the hover effects here!](http://www.imagehover.io/)
 
-## Bower
+## NPM
 
   ```
-  bower install imagehover.css
+  npm install imagehover.css
   ```
   
 ## CDN
@@ -85,5 +85,7 @@ You can find and customize these variables in the `_variables.scss` file.
 
   
 ## Browser Support
-Imagehover.css relies heavily on some CSS3 features including pseudo-elements, animations, transitions and transforms. Some older browsers will have limited support of these features. 
 
+![Chrome](https://raw.github.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png) | ![Firefox](https://raw.github.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png) | ![Edge](https://raw.github.com/alrra/browser-logos/master/src/edge/edge_48x48.png) | ![IE](https://raw.github.com/alrra/browser-logos/master/src/archive/internet-explorer_9-11/internet-explorer_9-11_48x48.png) | ![Safari](https://raw.github.com/alrra/browser-logos/master/src/safari/safari_48x48.png) | ![Opera](https://raw.github.com/alrra/browser-logos/master/src/opera/opera_48x48.png)
+--- | --- | --- | --- | --- | --- |
+Latest ✔ | Latest ✔ | Latest ✔ | 11+ ✔ | 9.1+ ✔ | Latest ✔ |
