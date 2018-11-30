@@ -39,21 +39,6 @@ const plumberOptions = {
  *
  * Build and minify styles for production/distributed use.
  */
-// gulp.task('minify', () => {
-    // gulp.src('scss/imagehover.scss')
-        // .pipe(sourcemaps.init())
-        // .pipe(sass({
-            // errLogToConsole: true,
-        // }).on('error', sass.logError))
-        // .pipe(rename('imagehover.min.css'))
-        // .pipe(cssnano({
-            // safe: true,
-            // autoprefixer: false,
-            // convertValues: false,
-        // }))
-        // .pipe(sourcemaps.write('/'))
-        // .pipe(gulp.dest('css'));
-// });
 gulp.task('minify', () => {
     return gulp.src('./css/imagehover.css')
         .pipe(cssnano())
