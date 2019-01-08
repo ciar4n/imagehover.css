@@ -1,5 +1,0 @@
-@mixin appearance($value) {
-  @include _bourbon-deprecate-for-prefixing("appearance");
-
-  @include prefixer(appearance, $value, webkit moz ms o spec);
-}
