@@ -30,12 +30,10 @@ hr {
   display: inline-block;
   width: 24%;
   padding: 10px;
-  -webkit-box-sizing: padding-box;
-  box-sizing: padding-box;
+  box-sizing: border-box;
 }
 .demo textarea {
-  -webkit-box-sizing: padding-box;
-  box-sizing: padding-box;
+  box-sizing: border-box;
   font-family: "Roboto";
   font-size: 0.9em;
   height: 32px;
