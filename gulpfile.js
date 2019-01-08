@@ -86,7 +86,7 @@ gulp.task('autoprefixer', () => {
 gulp.task('watch', () => {
     // Watch SCSS files for changes
     gulp.watch(
-        ['scss/*.scss'],
+        ['scss/**/*.scss'],
         ['build']
     );
 });
