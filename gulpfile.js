@@ -87,7 +87,7 @@ gulp.task('watch', () => {
     // Watch SCSS files for changes
     gulp.watch(
         ['scss/**/*.scss'],
-        ['build']
+        ['default']
     );
 });
 
