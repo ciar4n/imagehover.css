@@ -17,7 +17,7 @@ const clean = require('gulp-clean');
  *
  * @param err
  */
-let onError = function (err) {
+const onError = function(err) {
     notify.onError({
         title:    "Error",
         message:  "<%= error %>",
@@ -50,7 +50,7 @@ gulp.task('minify', () => {
  * Build task
  */
 gulp.task('build', () => {
-    gulp.src('scss/imagehover.scss')
+    return gulp.src('scss/imagehover.scss')
         .pipe(plumber(plumberOptions))
         .pipe(sourcemaps.init())
         .pipe(sass({
@@ -75,7 +75,7 @@ gulp.task('clean', () => {
 gulp.task('autoprefixer', () => {
     return gulp.src('./css/imagehover.css')
         .pipe(sourcemaps.init())
-        .pipe(postcss([ autoprefixer({browsers: ['last 1 version']}) ]))
+        .pipe(postcss([ autoprefixer() ]))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('./css/'));
 });
@@ -85,9 +85,9 @@ gulp.task('autoprefixer', () => {
  */
 gulp.task('watch', () => {
     // Watch SCSS files for changes
-    gulp.watch(
+    return gulp.watch(
         ['scss/**/*.scss'],
-        ['default']
+        gulp.series('default')
     );
 });
 
@@ -97,4 +97,4 @@ gulp.task('watch', () => {
  * Build then watch SCSS files.
  *
  */
-gulp.task('default', ['clean', 'build', 'autoprefixer', 'minify']);
+gulp.task('default', gulp.series('clean', 'build', 'autoprefixer', 'minify'));
