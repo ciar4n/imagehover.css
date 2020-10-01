@@ -77,12 +77,14 @@ You can find and customize these variables in the `_variables.scss` file.
 | `$figcaption-bg`           | `#135796` (default), or any valid CSS color value        | Specifies the `background-color` for the figcaption element.                       |
 | `$figcaption-padding`           | `30px` (default), or any length or percentage        | Sets the `padding` on the figcaption element.                         |
 | `$text-color`         | `#ffffff` (default), or any valid CSS color value       | Sets the text `color` for the figcaption element and any child `<h*> elements`.      |
-| `$border-color`       | `#ffffff` (default), or any valid CSS color value        | Sets the text `border-color` for ...                                |
-| `$border-margin` | `5px` (default), or any valid length        | ...                                                                                    |
+| `$border-color`       | `#ffffff` (default), or any valid CSS color value        | Sets the text `border-color` for ...                                
+|. $border-radius.     |. '4px' or any valid css value.                            |make border corner round 
+|  $border-style.      |  solid or any valid css value.                             | set the border-styls
+
 | `$border-width`      | `4px` (default), or any valid length        | ...     |
 | `$transition-duration`      | `0.35s` (default), or any valid time value        | Sets the transition duration for the animation.                                |
-| `$shift-distance`      | `10px` (default), or any valid length        | ...                              |
-
+| `$shift-distance`      | `10px` (default), or any valid length        | ...                           |
+|  $ margin-10px.        |. 10px or any valud value.                    | ...      | sets the margin between two boxes
   
 ## Browser Support
 
