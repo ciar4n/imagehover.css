@@ -27,7 +27,7 @@ Imagehover.css is a lovingly crafted CSS library allowing you to easily implemen
 2. Place the following markup in to your HTML document
 
   ```html
-  <figure class="imghvr-fade">
+  <figure class="imghover-fade">
     <img src="#">
     <figcaption>
       // Hover Content
@@ -35,13 +35,13 @@ Imagehover.css is a lovingly crafted CSS library allowing you to easily implemen
   </figure>
   ```
 
-3. Edit the URL to your image and add your hover content. Then simply set the imagehover.css class of your choice to the containing figure element. In the example above this has been set to 'imghvr-fade'. A full list of hover effects and their classes can be found [here!](http://www.imagehover.io/).
+3. Edit the URL to your image and add your hover content. Then simply set the imagehover.css class of your choice to the containing figure element. In the example above this has been set to 'imghover-fade'. A full list of hover effects and their classes can be found [here!](http://www.imagehover.io/).
 
 ## Adding a Link
 To link your image, add an empty &lt;a&gt; tag just after the figcaption element.
 
   ```html
-  <figure class="imghvr-fade">
+  <figure class="imghover-fade">
     <img src="#">
     <figcaption>
       // Hover Content
@@ -84,7 +84,7 @@ You can find and customize these variables in the `_variables.scss` file.
 | `$border-width`      | `4px` (default), or any valid length        | ...     |
 | `$transition-duration`      | `0.35s` (default), or any valid time value        | Sets the transition duration for the animation.                                |
 | `$shift-distance`      | `10px` (default), or any valid length        | ...                           |
-|  $ margin-10px.        |. 10px or any valud value.                    | ...      | sets the margin between two boxes
+|  $ margin-10px.        |. 10px or any valid css value.                    | ...      | sets the margin between two boxes
   
 ## Browser Support
 
