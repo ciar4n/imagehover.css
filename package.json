@@ -22,7 +22,7 @@
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.2.1",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-postcss": "^8.0.0",
     "gulp-clean": "^0.4.0",
