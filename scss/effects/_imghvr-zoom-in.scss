@@ -1,14 +1,15 @@
- /* imghvr-zoom-in
+/* imghvr-zoom-in
    ----------------------------- */
 .imghvr-zoom-in {
-	figcaption {
-		opacity: 0;
-		transform: scale(0.5);
-	}
-	&:hover {
-		figcaption {
-			transform: scale(1);
-			opacity: 1;
-		}
-	}
+  figcaption {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  &:hover {
+    figcaption {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
 }

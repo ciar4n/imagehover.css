@@ -1,18 +1,20 @@
- /* imghvr-blur
+/* imghvr-blur
    ----------------------------- */
 .imghvr-blur {
-	figcaption {
-		opacity: 0;
-	}
-	&:hover {
-		> img {
-			filter: blur(30px);
-			transform: scale(1.2);
-			opacity: 0;
-		}
-		figcaption {
-			opacity: 1;
-			transition-delay: $transition-duration * 0.6;
-		}
-	}
+  figcaption {
+    opacity: 0;
+  }
+
+  &:hover {
+    > img {
+      filter: blur(30px);
+      transform: scale(1.2);
+      opacity: 0;
+    }
+
+    figcaption {
+      opacity: 1;
+      transition-delay: $transition-duration * 0.6;
+    }
+  }
 }

@@ -1,65 +1,74 @@
- /* imghvr-slide-*
+/* imghvr-slide-*
    ----------------------------- */
-[class^='imghvr-slide-'], [class*=' imghvr-slide-'] {
-	&:hover {
-		figcaption {
-			transform: translate(0,0);
-		}
-	}
+[class^="imghvr-slide-"],
+[class*=" imghvr-slide-"] {
+  &:hover {
+    figcaption {
+      transform: translate(0, 0);
+    }
+  }
 }
- /* imghvr-slide-up
+
+/* imghvr-slide-up
    ----------------------------- */
 .imghvr-slide-up {
-	figcaption {
-		transform: translateY(100%);
-	}
+  figcaption {
+    transform: translateY(100%);
+  }
 }
- /* imghvr-slide-down
+
+/* imghvr-slide-down
    ----------------------------- */
 .imghvr-slide-down {
-	figcaption {
-		transform: translateY(-100%);
-	}
+  figcaption {
+    transform: translateY(-100%);
+  }
 }
- /* imghvr-slide-left
+
+/* imghvr-slide-left
    ----------------------------- */
 .imghvr-slide-left {
-	figcaption {
-		transform: translateX(100%);
-	}
+  figcaption {
+    transform: translateX(100%);
+  }
 }
- /* imghvr-slide-right
+
+/* imghvr-slide-right
    ----------------------------- */
 .imghvr-slide-right {
-	figcaption {
-		transform: translateX(-100%);
-	}
+  figcaption {
+    transform: translateX(-100%);
+  }
 }
- /* imghvr-slide-top-left
+
+/* imghvr-slide-top-left
    ----------------------------- */
 .imghvr-slide-top-left {
-	figcaption {
-		transform: translate(-100%,-100%);
-	}
+  figcaption {
+    transform: translate(-100%, -100%);
+  }
 }
- /* imghvr-slide-top-right
+
+/* imghvr-slide-top-right
    ----------------------------- */
 .imghvr-slide-top-right {
-	figcaption {
-		transform: translate(100%,-100%);
-	}
+  figcaption {
+    transform: translate(100%, -100%);
+  }
 }
- /* imghvr-slide-bottom-left
+
+/* imghvr-slide-bottom-left
    ----------------------------- */
 .imghvr-slide-bottom-left {
-	figcaption {
-		transform: translate(-100%,100%);
-	}
+  figcaption {
+    transform: translate(-100%, 100%);
+  }
 }
- /* imghvr-slide-bottom-right
+
+/* imghvr-slide-bottom-right
    ----------------------------- */
 .imghvr-slide-bottom-right {
-	figcaption {
-		transform: translate(100%,100%);
-	}
+  figcaption {
+    transform: translate(100%, 100%);
+  }
 }

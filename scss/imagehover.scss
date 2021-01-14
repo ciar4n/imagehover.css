@@ -22,7 +22,8 @@
   right: $padding;
 }
 
-[class^='imghvr-'],[class*=' imghvr-'] {
+[class^="imghvr-"],
+[class*=" imghvr-"] {
   position: relative;
   display: inline-block;
   margin: 0;
@@ -38,27 +39,40 @@
     vertical-align: top;
     max-width: 100%;
   }
-    figcaption {
-      background-color: $figcaption-bg;
-      padding: $figcaption-padding;
-      @include fill;
+  figcaption {
+    background-color: $figcaption-bg;
+    padding: $figcaption-padding;
+    @include fill;
+    color: $text-color;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       color: $text-color;
-      h1, h2, h3, h4, h5, h6 {
-        color: $text-color;
-      }
     }
-    a {
-      @include fill;
-      z-index: 1;
-    }
+  }
+  a {
+    @include fill;
+    z-index: 1;
+  }
 }
 
-[class^='imghvr-'], [class*=' imghvr-'], [class^='imghvr-']:before,
-[class^='imghvr-']:after, [class*=' imghvr-']:before, [class*=' imghvr-']:after,
-[class^='imghvr-'] *, [class*=' imghvr-'] *, [class^='imghvr-'] *:before,
-[class^='imghvr-'] *:after, [class*=' imghvr-'] *:before, [class*=' imghvr-'] *:after {
+[class^="imghvr-"],
+[class*=" imghvr-"],
+[class^="imghvr-"]:before,
+[class^="imghvr-"]:after,
+[class*=" imghvr-"]:before,
+[class*=" imghvr-"]:after,
+[class^="imghvr-"] *,
+[class*=" imghvr-"] *,
+[class^="imghvr-"] *:before,
+[class^="imghvr-"] *:after,
+[class*=" imghvr-"] *:before,
+[class*=" imghvr-"] *:after {
   box-sizing: border-box;
-  transition: all .35s ease;
+  transition: all 0.35s ease;
 }
 
 @import "effects/_imghvr-fade";
