@@ -35,15 +35,18 @@
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   transform: translateZ(0);
+
   > img {
     vertical-align: top;
     max-width: 100%;
   }
+
   figcaption {
     background-color: $figcaption-bg;
     padding: $figcaption-padding;
     @include fill;
     color: $text-color;
+
     h1,
     h2,
     h3,
@@ -53,6 +56,7 @@
       color: $text-color;
     }
   }
+
   a {
     @include fill;
     z-index: 1;
