@@ -788,6 +788,69 @@
             transform: skew(45deg) translateX(0%);
 }
 
+/* imghvr-switch-*
+   ----------------------------- */
+[class^='imghvr-switch-'] > img,
+[class^='imghvr-switch-'] figcaption,
+[class*=' imghvr-switch-'] > img,
+[class*=' imghvr-switch-'] figcaption {
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+[class^='imghvr-switch-']:hover figcaption,
+[class*=' imghvr-switch-']:hover figcaption {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+}
+
+/* imghvr-switch-up
+   ----------------------------- */
+.imghvr-switch-up figcaption {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+}
+
+.imghvr-switch-up:hover > img {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+}
+
+/* imghvr-switch-down
+   ----------------------------- */
+.imghvr-switch-down figcaption {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+}
+
+.imghvr-switch-down:hover > img {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+}
+
+/* imghvr-switch-left
+   ----------------------------- */
+.imghvr-switch-left figcaption {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+}
+
+.imghvr-switch-left:hover > img {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+}
+
+/* imghvr-switch-right
+   ----------------------------- */
+.imghvr-switch-right figcaption {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+}
+
+.imghvr-switch-right:hover > img {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+}
+
 /* imghvr-fold*
    ----------------------------- */
 [class^="imghvr-fold"],
