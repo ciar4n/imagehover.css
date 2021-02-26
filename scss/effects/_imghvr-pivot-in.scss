@@ -1,0 +1,48 @@
+/* imghvr-pivot-in*
+   ----------------------------- */
+[class^='imghvr-pivot-in'], 
+[class*=' imghvr-pivot-in'] { 
+	figcaption {
+		background-color: $figcaption-bg;
+	}
+	&:hover {
+		figcaption {
+			transform: rotate(0deg);
+		}
+	}
+}
+
+/* imghvr-pivot-in-top-left*
+   ----------------------------- */
+.imghvr-pivot-in-top-left {
+	figcaption {
+		transform: rotate(90deg);
+		transform-origin: 0 0;
+	}
+}
+
+/* imghvr-pivot-in-top-right*
+   ----------------------------- */
+.imghvr-pivot-in-top-right {
+	figcaption {
+		transform: rotate(-90deg);
+		transform-origin: 100% 0;
+	}
+}
+/* imghvr-pivot-in-bottom-left*
+   ----------------------------- */
+.imghvr-pivot-in-bottom-left {
+	figcaption {
+		transform: rotate(-90deg);
+		transform-origin: 0 100%;
+	}
+}
+
+/* imghvr-pivot-in-bottom-right*
+   ----------------------------- */
+.imghvr-pivot-in-bottom-right {
+	figcaption {
+		transform: rotate(90deg);
+		transform-origin: 100% 100%;
+	}
+}

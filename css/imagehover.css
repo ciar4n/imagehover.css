@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
  * ImageHover.css - http://www.imagehover.io
- * Version 1.0
+ * Version 2.0
  * Author: Ciarán Walsh
 
  * Made available under a MIT License:
@@ -849,6 +849,117 @@
 .imghvr-switch-right:hover > img {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
+}
+
+/* imghvr-pivot-in*
+   ----------------------------- */
+[class^='imghvr-pivot-in'] figcaption,
+[class*=' imghvr-pivot-in'] figcaption {
+    background-color: #135796;
+}
+
+[class^='imghvr-pivot-in']:hover figcaption,
+[class*=' imghvr-pivot-in']:hover figcaption {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+
+/* imghvr-pivot-in-top-left*
+   ----------------------------- */
+.imghvr-pivot-in-top-left figcaption {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+}
+
+/* imghvr-pivot-in-top-right*
+   ----------------------------- */
+.imghvr-pivot-in-top-right figcaption {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transform-origin: 100% 0;
+            transform-origin: 100% 0;
+}
+
+/* imghvr-pivot-in-bottom-left*
+   ----------------------------- */
+.imghvr-pivot-in-bottom-left figcaption {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+
+/* imghvr-pivot-in-bottom-right*
+   ----------------------------- */
+.imghvr-pivot-in-bottom-right figcaption {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+}
+
+/* imghvr-pivot-out-*
+   ----------------------------- */
+[class^='imghvr-pivot-out'] > img,
+[class*=' imghvr-pivot-out'] > img {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+
+[class^='imghvr-pivot-out'] figcaption,
+[class*=' imghvr-pivot-out'] figcaption {
+    background-color: #135796;
+    z-index: -1;
+}
+
+/* imghvr-pivot-out-top-left*
+   ----------------------------- */
+.imghvr-pivot-out-top-left > img {
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+}
+
+.imghvr-pivot-out-top-left:hover > img {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+}
+
+/* imghvr-pivot-out-top-right*
+   ----------------------------- */
+.imghvr-pivot-out-top-right > img {
+    -webkit-transform-origin: 100% 0;
+            transform-origin: 100% 0;
+}
+
+.imghvr-pivot-out-top-right:hover > img {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+}
+
+/* imghvr-pivot-out-bottom-left*
+   ----------------------------- */
+.imghvr-pivot-out-bottom-left > img {
+    -webkit-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+
+.imghvr-pivot-out-bottom-left:hover > img {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+}
+
+/* imghvr-pivot-out-bottom-right*
+   ----------------------------- */
+.imghvr-pivot-out-bottom-right > img {
+    -webkit-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+}
+
+.imghvr-pivot-out-bottom-right:hover > img {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
 }
 
 /* imghvr-fold*
