@@ -1335,6 +1335,66 @@
     transition-delay: 0.21s;
 }
 
+/* imghvr-fall-away-*
+   ----------------------------- */
+[class^='imghvr-fall-away-'],
+[class*=' imghvr-fall-away-'] {
+    -webkit-perspective: 50em;
+            perspective: 50em;
+}
+
+[class^='imghvr-fall-away-'] img,
+[class*=' imghvr-fall-away-'] img {
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    transition: all 0.455s ease-in;
+}
+
+[class^='imghvr-fall-away-'] figcaption,
+[class*=' imghvr-fall-away-'] figcaption {
+    opacity: 0;
+    background-color: #135796;
+}
+
+[class^='imghvr-fall-away-']:hover img,
+[class*=' imghvr-fall-away-']:hover img {
+    opacity: 0;
+}
+
+[class^='imghvr-fall-away-']:hover figcaption,
+[class*=' imghvr-fall-away-']:hover figcaption {
+    opacity: 1;
+    transition-delay: 0.455s;
+}
+
+/* imghvr-fall-away-horiz
+   ----------------------------- */
+.imghvr-fall-away-horiz:hover img {
+    -webkit-transform: rotateX(-360deg) scale(0.2);
+            transform: rotateX(-360deg) scale(0.2);
+}
+
+/* imghvr-fall-away-vert
+   ----------------------------- */
+.imghvr-fall-away-vert:hover img {
+    -webkit-transform: rotateY(-360deg) scale(0.2);
+            transform: rotateY(-360deg) scale(0.2);
+}
+
+/* imghvr-fall-away-cc
+   ----------------------------- */
+.imghvr-fall-away-cc:hover img {
+    -webkit-transform: rotate(360deg) scale(0.2);
+            transform: rotate(360deg) scale(0.2);
+}
+
+/* imghvr-fall-away-ccc
+   ----------------------------- */
+.imghvr-fall-away-ccc:hover img {
+    -webkit-transform: rotate(-360deg) scale(0.2);
+            transform: rotate(-360deg) scale(0.2);
+}
+
 /*# sourceMappingURL=imagehover.css.map */
 
 /*# sourceMappingURL=imagehover.css.map */
