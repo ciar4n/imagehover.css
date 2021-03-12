@@ -1,0 +1,782 @@
+[class^='imghvr-'],
+[class*=' imghvr-']
+  position: relative
+  display: inline-block
+  margin: 0px
+  max-width: 100%
+  background-color: rgba(1, 87, 155, 0.75)
+  color: #fff
+  overflow: hidden
+  backface-visibility: hidden
+  osx-font-smoothing: grayscale
+  transform: translateZ(0)
+
+[class^='imghvr-'] > img,
+[class*=' imghvr-'] > img
+  vertical-align: top
+  max-width: 100%
+
+[class^='imghvr-'] figcaption,
+[class*=' imghvr-'] figcaption
+  background-color: inherit
+  padding: 30px
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+
+[class^='imghvr-'] h3,
+[class*=' imghvr-'] h3,
+[class^='imghvr-'] p,
+[class*=' imghvr-'] p
+  margin: 0
+  padding: 0
+  color: #fff
+
+[class^='imghvr-'] a,
+[class*=' imghvr-'] a
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  z-index: 1
+
+[class^='imghvr-'],
+[class*=' imghvr-'],
+[class^='imghvr-']:before,
+[class^='imghvr-']:after,
+[class*=' imghvr-']:before,
+[class*=' imghvr-']:after,
+[class^='imghvr-'] *,
+[class*=' imghvr-'] *,
+[class^='imghvr-'] *:before,
+[class^='imghvr-'] *:after,
+[class*=' imghvr-'] *:before,
+[class*=' imghvr-'] *:after
+  box-sizing: border-box
+  box-sizing: border-box
+  transition: all 0.35s ease
+
+.imghvr-fade
+  figcaption
+    opacity: 0
+  &:hover
+    & > img
+      opacity: 0
+    figcaption
+      opacity: 1
+
+[class^='imghvr-push-']:hover figcaption,
+[class*=' imghvr-push-']:hover figcaption
+  transform: translate(0, 0)
+  transform: translate(0, 0)
+
+.imghvr-push-up
+  figcaption
+    transform: translateY(100%)
+    transform: translateY(100%)
+  &:hover
+    & > img
+      transform: translateY(-100%)
+      transform: translateY(-100%)
+
+.imghvr-push-down
+  figcaption
+    transform: translateY(-100%)
+    transform: translateY(-100%)
+  &:hover
+    & > img
+      transform: translateY(100%)
+      transform: translateY(100%)
+
+.imghvr-push-left
+  figcaption
+    transform: translateX(100%)
+    transform: translateX(100%)
+  &:hover
+    & > img
+      transform: translateX(-100%)
+      transform: translateX(-100%)
+
+.imghvr-push-right
+  figcaption
+    transform: translateX(-100%)
+    transform: translateX(-100%)
+  &:hover
+    & > img
+      transform: translateX(100%)
+      transform: translateX(100%)
+
+[class^='imghvr-slide-']:hover figcaption,
+[class*=' imghvr-slide-']:hover figcaption
+  transform: translate(0, 0)
+  transform: translate(0, 0)
+
+.imghvr-slide-up
+  figcaption
+    transform: translateY(100%)
+    transform: translateY(100%)
+    background-color: inherit
+
+.imghvr-slide-down
+  figcaption
+    transform: translateY(-100%)
+    transform: translateY(-100%)
+    background-color: inherit
+
+.imghvr-slide-left
+  figcaption
+    transform: translateX(100%)
+    transform: translateX(100%)
+    background-color: inherit
+
+.imghvr-slide-right
+  figcaption
+    transform: translateX(-100%)
+    transform: translateX(-100%)
+
+[class^='imghvr-reveal-']:before,
+[class*=' imghvr-reveal-']:before
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  content: ''
+  background-color: inherit
+
+[class^='imghvr-reveal-'] figcaption,
+[class*=' imghvr-reveal-'] figcaption
+  opacity: 0
+
+[class^='imghvr-reveal-']:hover:before,
+[class*=' imghvr-reveal-']:hover:before
+  transform: translate(0, 0)
+  transform: translate(0, 0)
+
+[class^='imghvr-reveal-']:hover figcaption,
+[class*=' imghvr-reveal-']:hover figcaption
+  opacity: 1
+  transition-delay: 0.2s
+
+.imghvr-reveal-up
+  &:before
+    transform: translateY(100%)
+    transform: translateY(100%)
+
+.imghvr-reveal-down
+  &:before
+    transform: translateY(-100%)
+    transform: translateY(-100%)
+
+.imghvr-reveal-left
+  &:before
+    transform: translateX(100%)
+    transform: translateX(100%)
+
+.imghvr-reveal-right
+  &:before
+    transform: translateX(-100%)
+    transform: translateX(-100%)
+
+[class^='imghvr-hinge-'],
+[class*=' imghvr-hinge-']
+  perspective: 50em
+  perspective: 50em
+
+[class^='imghvr-hinge-'] figcaption,
+[class*=' imghvr-hinge-'] figcaption
+  opacity: 0
+  z-index: 1
+
+[class^='imghvr-hinge-']:hover img,
+[class*=' imghvr-hinge-']:hover img
+  opacity: 0
+
+[class^='imghvr-hinge-']:hover figcaption,
+[class*=' imghvr-hinge-']:hover figcaption
+  opacity: 1
+  transition-delay: 0.2s
+
+.imghvr-hinge-up
+  img
+    transform-origin: 50% 0%
+    transform-origin: 50% 0%
+  figcaption
+    transform: rotateX(90deg)
+    transform: rotateX(90deg)
+    transform-origin: 50% 100%
+  &:hover
+    & > img
+      transform: rotateX(-90deg)
+      transform: rotateX(-90deg)
+    figcaption
+      transform: rotateX(0deg)
+      transform: rotateX(0deg)
+
+.imghvr-hinge-down
+  img
+    transform-origin: 50% 100%
+    transform-origin: 50% 100%
+  figcaption
+    transform: rotateX(-90deg)
+    transform: rotateX(-90deg)
+    transform-origin: 50% -50%
+  &:hover
+    & > img
+      transform: rotateX(90deg)
+      transform: rotateX(90deg)
+      opacity: 0
+    figcaption
+      transform: rotateX(0deg)
+      transform: rotateX(0deg)
+
+.imghvr-hinge-left
+  img
+    transform-origin: 0% 50%
+    transform-origin: 0% 50%
+  figcaption
+    transform: rotateY(-90deg)
+    transform: rotateY(-90deg)
+    transform-origin: 100% 50%
+  &:hover
+    & > img
+      transform: rotateY(90deg)
+      transform: rotateY(90deg)
+    figcaption
+      transform: rotateY(0deg)
+      transform: rotateY(0deg)
+
+.imghvr-hinge-right
+  img
+    transform-origin: 100% 50%
+    transform-origin: 100% 50%
+  figcaption
+    transform: rotateY(90deg)
+    transform: rotateY(90deg)
+    transform-origin: 0 50%
+  &:hover
+    & > img
+      transform: rotateY(-90deg)
+      transform: rotateY(-90deg)
+    figcaption
+      transform: rotateY(0deg)
+      transform: rotateY(0deg)
+
+[class^='imghvr-flip-'],
+[class*=' imghvr-flip-']
+  perspective: 50em
+  perspective: 50em
+
+[class^='imghvr-flip-'] img,
+[class*=' imghvr-flip-'] img
+  backface-visibility: hidden
+
+[class^='imghvr-flip-'] figcaption,
+[class*=' imghvr-flip-'] figcaption
+  opacity: 0
+
+[class^='imghvr-flip-']:hover > img,
+[class*=' imghvr-flip-']:hover > img
+  opacity: 0
+
+[class^='imghvr-flip-']:hover figcaption,
+[class*=' imghvr-flip-']:hover figcaption
+  opacity: 1
+  transition-delay: 0.15s
+
+.imghvr-flip-horiz
+  figcaption
+    transform: rotateX(90deg)
+    transform: rotateX(90deg)
+    transform-origin: 0% 50%
+  &:hover
+    img
+      transform: rotateX(-180deg)
+      transform: rotateX(-180deg)
+    figcaption
+      transform: rotateX(0deg)
+      transform: rotateX(0deg)
+
+.imghvr-flip-vert
+  figcaption
+    transform: rotateY(90deg)
+    transform: rotateY(90deg)
+    transform-origin: 50% 0%
+  &:hover
+    & > img
+      transform: rotateY(-180deg)
+      transform: rotateY(-180deg)
+    figcaption
+      transform: rotateY(0deg)
+      transform: rotateY(0deg)
+
+.imghvr-flip-diag-1
+  figcaption
+    transform: rotate3d(1, -1, 0, 100deg)
+    transform: rotate3d(1, -1, 0, 100deg)
+  &:hover
+    & > img
+      transform: rotate3d(-1, 1, 0, 100deg)
+      transform: rotate3d(-1, 1, 0, 100deg)
+    figcaption
+      transform: rotate3d(0, 0, 0, 0deg)
+      transform: rotate3d(0, 0, 0, 0deg)
+
+.imghvr-flip-diag-2
+  figcaption
+    transform: rotate3d(1, 1, 0, 100deg)
+    transform: rotate3d(1, 1, 0, 100deg)
+  &:hover
+    & > img
+      transform: rotate3d(-1, -1, 0, 100deg)
+      transform: rotate3d(-1, -1, 0, 100deg)
+    figcaption
+      transform: rotate3d(0, 0, 0, 0deg)
+      transform: rotate3d(0, 0, 0, 0deg)
+
+[class^='imghvr-shutter-out-']:before,
+[class*=' imghvr-shutter-out-']:before
+  background: inherit
+  position: absolute
+  content: ''
+  transition-delay: 0.1s
+
+[class^='imghvr-shutter-out-'] figcaption,
+[class*=' imghvr-shutter-out-'] figcaption
+  opacity: 0
+  transition-delay: 0s
+
+[class^='imghvr-shutter-out-']:hover:before,
+[class*=' imghvr-shutter-out-']:hover:before
+  transition-delay: 0s
+  transition-delay: 0s
+
+[class^='imghvr-shutter-out-']:hover figcaption,
+[class*=' imghvr-shutter-out-']:hover figcaption
+  opacity: 1
+  transition-delay: 0.1s
+
+.imghvr-shutter-out-horiz
+  &:before
+    left: 50%
+    right: 50%
+    top: 0
+    bottom: 0
+  &:hover
+    &:before
+      left: 0
+      right: 0
+
+.imghvr-shutter-out-vert
+  &:before
+    top: 50%
+    bottom: 50%
+    left: 0
+    right: 0
+  &:hover
+    &:before
+      top: 0
+      bottom: 0
+
+.imghvr-shutter-out-diag-1
+  &:before
+    top: 50%
+    bottom: 50%
+    left: -35%
+    right: -35%
+    transform: rotate(45deg)
+  &:hover
+    &:before
+      top: -35%
+      bottom: -35%
+
+.imghvr-shutter-out-diag-2
+  &:before
+    top: 50%
+    bottom: 50%
+    left: -35%
+    right: -35%
+    transform: rotate(-45deg)
+  &:hover
+    &:before
+      top: -35%
+      bottom: -35%
+
+[class^='imghvr-shutter-in-']:after,
+[class*=' imghvr-shutter-in-']:after,
+[class^='imghvr-shutter-in-']:before,
+[class*=' imghvr-shutter-in-']:before
+  background: inherit
+  position: absolute
+  content: ''
+
+[class^='imghvr-shutter-in-']:after,
+[class*=' imghvr-shutter-in-']:after
+  top: 0
+  left: 0
+
+[class^='imghvr-shutter-in-']:before,
+[class*=' imghvr-shutter-in-']:before
+  right: 0
+  bottom: 0
+
+[class^='imghvr-shutter-in-'] figcaption,
+[class*=' imghvr-shutter-in-'] figcaption
+  opacity: 0
+  z-index: 1
+
+[class^='imghvr-shutter-in-']:hover figcaption,
+[class*=' imghvr-shutter-in-']:hover figcaption
+  opacity: 1
+  transition-delay: 0.2s
+
+.imghvr-shutter-in-horiz:after,
+.imghvr-shutter-in-horiz:before
+  width: 0
+  height: 100%
+
+.imghvr-shutter-in-horiz:hover:after,
+.imghvr-shutter-in-horiz:hover:before
+  width: 50%
+
+.imghvr-shutter-in-vert:after,
+.imghvr-shutter-in-vert:before
+  height: 0
+  width: 100%
+
+.imghvr-shutter-in-vert:hover:after,
+.imghvr-shutter-in-vert:hover:before
+  height: 50%
+
+.imghvr-shutter-in-out-horiz:after,
+.imghvr-shutter-in-out-horiz:before
+  width: 0
+  height: 100%
+
+.imghvr-shutter-in-out-horiz:hover:after,
+.imghvr-shutter-in-out-horiz:hover:before
+  width: 100%
+
+.imghvr-shutter-in-out-vert:after,
+.imghvr-shutter-in-out-vert:before
+  height: 0
+  width: 100%
+
+.imghvr-shutter-in-out-vert:hover:after,
+.imghvr-shutter-in-out-vert:hover:before
+  height: 100%
+
+.imghvr-shutter-in-out-diag-1:after,
+.imghvr-shutter-in-out-diag-1:before
+  width: 200%
+  height: 200%
+  transition: all 0.6s ease
+
+.imghvr-shutter-in-out-diag-1
+  &:after
+    transform: skew(-45deg) translateX(-150%)
+    transform: skew(-45deg) translateX(-150%)
+  &:before
+    transform: skew(-45deg) translateX(150%)
+    transform: skew(-45deg) translateX(150%)
+  &:hover
+    &:after
+      transform: skew(-45deg) translateX(-50%)
+      transform: skew(-45deg) translateX(-50%)
+    &:before
+      transform: skew(-45deg) translateX(50%)
+      transform: skew(-45deg) translateX(50%)
+
+.imghvr-shutter-in-out-diag-2:after,
+.imghvr-shutter-in-out-diag-2:before
+  width: 200%
+  height: 200%
+  transition: all 0.6s ease
+
+.imghvr-shutter-in-out-diag-2
+  &:after
+    transform: skew(45deg) translateX(-100%)
+    transform: skew(45deg) translateX(-100%)
+  &:before
+    transform: skew(45deg) translateX(100%)
+    transform: skew(45deg) translateX(100%)
+  &:hover
+    &:after
+      transform: skew(45deg) translateX(0%)
+      transform: skew(45deg) translateX(0%)
+    &:before
+      transform: skew(45deg) translateX(0%)
+      transform: skew(45deg) translateX(0%)
+
+[class^='imghvr-fold'],
+[class*=' imghvr-fold']
+  perspective: 50em
+  perspective: 50em
+
+[class^='imghvr-fold'] img,
+[class*=' imghvr-fold'] img
+  transform-origin: 50% 0%
+  transform-origin: 50% 0%
+
+[class^='imghvr-fold'] figcaption,
+[class*=' imghvr-fold'] figcaption
+  z-index: 1
+  opacity: 0
+
+[class^='imghvr-fold']:hover > img,
+[class*=' imghvr-fold']:hover > img
+  opacity: 0
+  transition-delay: 0
+
+[class^='imghvr-fold']:hover figcaption,
+[class*=' imghvr-fold']:hover figcaption
+  transform: rotateX(0deg) translate3d(0, 0%, 0) scale(1)
+  transform: rotateX(0deg) translate3d(0, 0%, 0) scale(1)
+  opacity: 1
+  transition-delay: 0.2s
+
+.imghvr-fold-up
+  & > img
+    transform-origin: 50% 0%
+    transform-origin: 50% 0%
+  figcaption
+    transform: rotateX(-90deg) translate3d(0%, -50%, 0) scale(0.6)
+    transform: rotateX(-90deg) translate3d(0%, -50%, 0) scale(0.6)
+    transform-origin: 50% 100%
+  &:hover
+    & > img
+      transform: rotateX(90deg) scale(0.6) translateY(50%)
+      transform: rotateX(90deg) scale(0.6) translateY(50%)
+
+.imghvr-fold-down
+  & > img
+    transform-origin: 50% 100%
+    transform-origin: 50% 100%
+  figcaption
+    transform: rotateX(90deg) translate3d(0%, 50%, 0) scale(0.6)
+    transform: rotateX(90deg) translate3d(0%, 50%, 0) scale(0.6)
+    transform-origin: 50% 0%
+  &:hover
+    & > img
+      transform: rotateX(-90deg) scale(0.6) translateY(-50%)
+      transform: rotateX(-90deg) scale(0.6) translateY(-50%)
+
+.imghvr-fold-left
+  & > img
+    transform-origin: 0% 50%
+    transform-origin: 0% 50%
+  figcaption
+    transform: rotateY(90deg) translate3d(-50%, 0%, 0) scale(0.6)
+    transform: rotateY(90deg) translate3d(-50%, 0%, 0) scale(0.6)
+    transform-origin: 100% 50%
+  &:hover
+    & > img
+      transform: rotateY(-90deg) scale(0.6) translateX(50%)
+      transform: rotateY(-90deg) scale(0.6) translateX(50%)
+
+.imghvr-fold-right
+  perspective: 50em
+  perspective: 50em
+  & > img
+    transform-origin: 100% 50%
+    transform-origin: 100% 50%
+  figcaption
+    transform: rotateY(-90deg) translate3d(50%, 0%, 0) scale(0.6)
+    transform: rotateY(-90deg) translate3d(50%, 0%, 0) scale(0.6)
+    transform-origin: 0 50%
+  &:hover
+    & > img
+      transform: rotateY(90deg) scale(0.6) translateX(-50%)
+      transform: rotateY(90deg) scale(0.6) translateX(-50%)
+
+.imghvr-zoom-in
+  figcaption
+    opacity: 0
+    transform: scale(0.5)
+  &:hover
+    figcaption
+      transform: scale(1)
+      transform: scale(1)
+      opacity: 1
+
+[class^='imghvr-zoom-out'] figcaption,
+[class*=' imghvr-zoom-out'] figcaption
+  transform: scale(0.5)
+  transform: scale(0.5)
+  transform-origin: 50% 50%
+  opacity: 0
+
+[class^='imghvr-zoom-out']:hover figcaption,
+[class*=' imghvr-zoom-out']:hover figcaption,
+[class^='imghvr-zoom-out'].hover figcaption,
+[class*=' imghvr-zoom-out'].hover figcaption
+  transform: scale(1)
+  transform: scale(1)
+  opacity: 1
+  transition-delay: 0.3s
+
+.imghvr-zoom-out
+  &:hover
+    & > img
+      transform: scale(0.5)
+      transform: scale(0.5)
+      opacity: 0
+
+.imghvr-zoom-out-up:hover > img,
+.imghvr-zoom-out-up.hover > img
+  animation: imghvr-zoom-out-up 0.4s linear
+  animation: imghvrout-up 0.4s linear
+  animation-iteration-count: 1
+  animationcount: 1
+  animation-fill-mode: forwards
+  animationmode: forwards
+
+@-webkit-keyframes
+  imghvr-zoom-out-up
+    50% 
+      transform: scale(0.8) translateY(0%)
+      opacity: 0.5
+  imghvr-zoom-out-down
+    50% 
+      transform: scale(0.8) translateY(0%)
+      opacity: 0.5
+  imghvr-zoom-out-left
+    50% 
+      transform: scale(0.8) translateX(0%)
+      opacity: 0.5
+  imghvr-zoom-out-right
+    50% 
+      transform: scale(0.8) translateX(0%)
+      opacity: 0.5
+
+    100%
+      transform: scale(0.8) translateY(-150%)
+      transform: scale(0.8) translateY(-150%)
+      opacity: 0.5
+      transform: scale(0.8) translateY(-150%)
+      transform: scale(0.8) translateY(-150%)
+      opacity: 0.5
+      transform: scale(0.8) translateY(150%)
+      transform: scale(0.8) translateY(150%)
+      opacity: 0.5
+      transform: scale(0.8) translateY(150%)
+      transform: scale(0.8) translateY(150%)
+      opacity: 0.5
+      transform: scale(0.8) translateX(-150%)
+      transform: scale(0.8) translateX(-150%)
+      opacity: 0.5
+      transform: scale(0.8) translateX(-150%)
+      transform: scale(0.8) translateX(-150%)
+      opacity: 0.5
+      transform: scale(0.8) translateX(150%)
+      transform: scale(0.8) translateX(150%)
+      opacity: 0.5
+      transform: scale(0.8) translateX(150%)
+      transform: scale(0.8) translateX(150%)
+      opacity: 0.5
+
+@keyframes
+  imghvr-zoom-out-up
+    50% 
+      transform: scale(0.8) translateY(0%)
+      opacity: 0.5
+  imghvr-zoom-out-down
+    50% 
+      transform: scale(0.8) translateY(0%)
+      opacity: 0.5
+  imghvr-zoom-out-left
+    50% 
+      transform: scale(0.8) translateX(0%)
+      opacity: 0.5
+  imghvr-zoom-out-right
+    50% 
+      transform: scale(0.8) translateX(0%)
+      opacity: 0.5
+    
+.imghvr-zoom-out-flip-horiz
+  perspective: 50em
+  perspective: 50em
+
+.imghvr-zoom-out-down:hover > img,
+.imghvr-zoom-out-down.hover > img
+  animation: imghvr-zoom-out-down 0.4s linear
+  animation: imghvrout-down 0.4s linear
+  animation-iteration-count: 1
+  animationcount: 1
+  animation-fill-mode: forwards
+  animationmode: forwards
+
+.imghvr-zoom-out-left:hover > img,
+.imghvr-zoom-out-left.hover > img
+  animation: imghvr-zoom-out-left 0.4s linear
+  animation: imghvrout-left 0.4s linear
+  animation-iteration-count: 1
+  animationcount: 1
+  animation-fill-mode: forwards
+  animationmode: forwards
+
+.imghvr-zoom-out-right:hover > img,
+.imghvr-zoom-out-right.hover > img
+  animation: imghvr-zoom-out-right 0.4s linear
+  animation: imghvrout-right 0.4s linear
+  animation-iteration-count: 1
+  animationcount: 1
+  animation-fill-mode: forwards
+  animationmode: forwards
+
+.imghvr-zoom-out-flip-horiz
+  figcaption
+    opacity: 0
+    transform: rotateX(90deg) translateY(-100%) scale(0.5)
+
+.imghvr-zoom-out-flip-horiz:hover > img,
+.imghvr-zoom-out-flip-horiz.hover > img
+  transform: rotateX(-100deg) translateY(50%) scale(0.5)
+  transform: rotateX(-100deg) translateY(50%) scale(0.5)
+  opacity: 0
+  transition-delay: 0
+
+.imghvr-zoom-out-flip-horiz:hover figcaption,
+.imghvr-zoom-out-flip-horiz.hover figcaption
+  transform: rotateX(0deg) translateY(0%) scale(1)
+  transform: rotateX(0deg) translateY(0%) scale(1)
+  opacity: 1
+  transition-delay: 0.3s
+
+.imghvr-zoom-out-flip-vert
+  perspective: 50em
+  perspective: 50em
+  figcaption
+    opacity: 0
+    transform: rotateY(90deg) translate(50%, 0px) scale(0.5)
+
+.imghvr-zoom-out-flip-vert:hover > img,
+.imghvr-zoom-out-flip-vert.hover > img
+  transform: rotateY(-100deg) translateX(50%) scale(0.5)
+  transform: rotateY(-100deg) translateX(50%) scale(0.5)
+  opacity: 0
+  transition-delay: 0
+
+.imghvr-zoom-out-flip-vert:hover figcaption,
+.imghvr-zoom-out-flip-vert.hover figcaption
+  transform: rotateY(0deg) translate(0px, 0px) scale(1)
+  transform: rotateY(0deg) translate(0px, 0px) scale(1)
+  opacity: 1
+  transition-delay: 0.3s
+
+.imghvr-blur
+  figcaption
+    opacity: 0
+  &:hover
+    & > img
+      filter: blur(30px)
+      filter: blur(30px)
+      transform: scale(1.2)
+      opacity: 0
+    figcaption
+      opacity: 1
+      transition-delay: 0.2s
+
