@@ -79,6 +79,25 @@
   transition: all 0.35s ease;
 }
 
+// For mobile devices hide the link until effect has executed
+[class^='imghvr-'] {
+  a {
+    visibility: hidden;
+  }
+  &:hover {
+    a {
+      animation: makevisible 0s 0.1s forwards;
+      visibility: hidden;
+    }
+  }
+}
+
+@keyframes makevisible  {
+  to {
+    visibility: visible;
+  }
+}
+
 @import "effects/_imghvr-fade";
 @import "effects/_imghvr-push";
 @import "effects/_imghvr-slide";
